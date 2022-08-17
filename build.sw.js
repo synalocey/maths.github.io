@@ -9,20 +9,20 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "Guidebook_for_Mathematics.html",
-    "revision": "220817"
+    "revision": "220818"
   },
   {
     "url": "SI_Manage_CN.html",
-    "revision": "220817"
+    "revision": "220818"
   },
   {
     "url": "Country_List.html",
-    "revision": "220817"
+    "revision": "220818"
   }
 ]);
 
 // 缓存策略
 workbox.routing.registerRoute(
-  new RegExp('.*'),
+  new RegExp(''.*\.html'),
   workbox.strategies.staleWhileRevalidate()
 );
