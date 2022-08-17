@@ -23,23 +23,6 @@ workbox.precaching.precacheAndRoute([
 
 // 缓存策略
 workbox.routing.registerRoute(
-  new RegExp('.*\.html'),
+  new RegExp('.*'),
   workbox.strategies.staleWhileRevalidate()
-);
-
-workbox.routing.registerRoute(
-  new RegExp('.*\.(?:js|css)'),
-  workbox.strategies.staleWhileRevalidate()
-);
-
-workbox.routing.registerRoute(
-  new RegExp('https://your\.cdn\.com/'),
-  workbox.strategies.staleWhileRevalidate()
-);
-
-workbox.routing.registerRoute(
-  new RegExp('https://your\.img\.cdn\.com/'),
-  workbox.strategies.staleWhileRevalidate({
-    cacheName: 'example:img'
-  })
 );
