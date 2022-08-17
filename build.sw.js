@@ -5,7 +5,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.3.0/workbox
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "220817"
+    "revision": "220818"
   },
   {
     "url": "Guidebook_for_Mathematics.html",
