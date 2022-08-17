@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <head>
+    <title>Service Worker Demo</title>
+  </head>
+  <body>
+<script>
+// Register A service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register(`./build.sw.js`)
+  .then(function(registration) {
+    // Registration was successful
+    console.log('[success] register ')
+  }, function(err) {
+    // registration failed :(
+    console.log('[fail]: ', err);
+  });
+  });
+}
+ </script>
+  </body>
+</html>
