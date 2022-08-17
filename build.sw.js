@@ -23,6 +23,6 @@ workbox.precaching.precacheAndRoute([
 
 // 缓存策略
 workbox.routing.registerRoute(
-  new RegExp(''.*\.html'),
+  new RegExp('.*\.html'),
   workbox.strategies.staleWhileRevalidate()
 );
