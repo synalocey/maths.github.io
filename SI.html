@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="./SI_files/nr-1216.min.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1d12cb7e34","applicationID":"5931243","transactionName":"IVddRkUJXQoDEElPUQlRHEFfCUY=","queueTime":0,"applicationTime":377,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"XQAGU15RGwYJV1BQAwI=",licenseKey:"1d12cb7e34",applicationID:"5931243"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(27),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(28),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(28),a=t(27);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(24),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(27),s=t(28),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(26),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(t)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],25:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(27),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(22),s=t("handle"),c=t(27),f=t("ee"),u=t(25),d=t(17),l=t(19),p=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(16),t(23),m[v]?(m[v]("DOMContentLoaded",o,l(!1)),h[v]("load",r,l(!1))):(m[w]("onreadystatechange",i),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(28),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+<title>SI Manage CN - Journal Mathematics - Redmine MDPI Lab</title>
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="60KCsMAht7cQbXeBVH5MYofgDliCNElCfIBok3TbipE=" name="csrf-token">
+<link rel="shortcut icon" href="https://redmine.mdpi.cn/favicon.ico?1660716616">
+<link href="./SI_files/jquery-ui-1.9.2.css" media="all" rel="stylesheet" type="text/css">
+<link href="./SI_files/application.css" media="all" rel="stylesheet" type="text/css">
+
+<link href="./SI_files/select2.min.css" media="screen" rel="stylesheet" type="text/css">
+<script src="./SI_files/jquery-1.8.3-ui-1.9.2-ujs-2.0.3.js.download" type="text/javascript"></script>
+<script src="./SI_files/application.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+<script src="./SI_files/clipboard.min.js.download" type="text/javascript"></script>
+<script src="./SI_files/select2.min.js.download" type="text/javascript"></script>
+
+
+<link href="./SI_files/dmsf.css" media="screen" rel="stylesheet" type="text/css">     <link href="./SI_files/private_wiki.css" media="screen" rel="stylesheet" type="text/css">
+ 
+<!-- page specific tags -->
+  <script src="./SI_files/attachments.js.download" type="text/javascript"></script>
+</head>
+<body class="theme-Alternate controller-wiki action-show" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed=""><div id="paster" contenteditable="true" _moz_resizing="false" style="position: absolute; height: 1px; width: 1px; opacity: 0; outline: 0px; overflow: auto; z-index: -9999;"></div>
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="https://redmine.mdpi.cn/my/account" class="my-account">My account</a></li>
+<li><a href="https://redmine.mdpi.cn/logout" class="logout" data-method="post" rel="nofollow">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a href="https://redmine.mdpi.cn/users/3496" class="user active" format="username">syna.mu@mdpi.com</a></div>
+    <ul><li><a href="https://redmine.mdpi.cn/" class="home">Home</a></li>
+<li><a href="https://redmine.mdpi.cn/my/page" class="my-page">My page</a></li>
+<li><a href="https://redmine.mdpi.cn/projects" class="projects">Projects</a></li>
+<li><a href="https://redmine.mdpi.cn/rb/statistics" class="rb-statistics">Scrum statistics</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul>        <div style="float: right;"><a href="https://cryptpad.mdpi.cn/" target="_blank">My Documents</a></div>
+
+</div>
+
+<div id="header">
+    <div id="quick-search">
+        <form accept-charset="UTF-8" action="https://redmine.mdpi.cn/projects/journal-mathematics/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input name="wiki_pages" type="hidden" value="1">
+        <label for="q">
+          <a href="https://redmine.mdpi.cn/projects/journal-mathematics/search" accesskey="4">Search</a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text">
+        <select name="dmsf_content" onchange="if (this.value == &#39;yes&#39;) { $(&#39;#quick-search form&#39;).submit(); }">
+          <option value="no">Other</option>
+          <option value="yes">Search DMSF Content</option>
+        </select>
+</form>        <select id="project_quick_jump_box" name="project_quick_jump_box" onchange="if (this.value != &#39;&#39;) { window.location = this.value; }"><option value="">Jump to a project...</option><option value="" disabled="disabled">---</option><option value="/projects/activity-photos?jump=wiki">Activity Photos</option><option value="/projects/admin-department?jump=wiki">Admin Department</option><option value="/projects/design?jump=wiki">Communications &amp; Marketing</option><option value="/projects/graphic_design?jump=wiki">&nbsp;&nbsp;»  - Design -</option><option value="/projects/offline-group?jump=wiki">&nbsp;&nbsp;»  Offline Group</option><option value="/projects/china-social-media?jump=wiki">&nbsp;&nbsp;» China Social Media</option><option value="/projects/conference-sciforum-group?jump=wiki">&nbsp;&nbsp;» Conference &amp; SciForum Group</option><option value="/projects/sciforum-conferences?jump=wiki">&nbsp;&nbsp;» Conference/Webinar Applications and Event CfP</option><option value="/projects/communications-marketing-action-plan-2015?jump=wiki">&nbsp;&nbsp;» Corporate Action Plan</option><option value="/projects/comms-projects?jump=wiki">&nbsp;&nbsp;» Journal Comms &amp; Marketing</option><option value="/projects/m-journal-award?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» Journal Award</option><option value="/projects/marketing-announcement?jump=wiki">&nbsp;&nbsp;» Marketing Announcement</option><option value="/projects/journal-news?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» Journal news</option><option value="/projects/online-activitites?jump=wiki">&nbsp;&nbsp;» Online Activities</option><option value="/projects/printing?jump=wiki">&nbsp;&nbsp;» Printing &amp; Shipping</option><option value="/projects/proceedings-agreements?jump=wiki">&nbsp;&nbsp;» Proceedings Series</option><option value="/projects/video?jump=wiki">&nbsp;&nbsp;» Video</option><option value="/projects/data-analysis-decision-support?jump=wiki">Data Analysis &amp; Decision Support</option><option value="/projects/development?jump=wiki">Development (Information Systems &amp; Technology)</option><option value="/projects/name-communication-committee?jump=wiki">&nbsp;&nbsp;» Communication Committee</option><option value="/projects/editorial-processing-committee?jump=wiki">&nbsp;&nbsp;» Editorial Processing Committee</option><option value="/projects/ethics-committee?jump=wiki">&nbsp;&nbsp;» Ethics Committee</option><option value="/projects/finance?jump=wiki">&nbsp;&nbsp;» Finance</option><option value="/projects/hrms?jump=wiki">&nbsp;&nbsp;» HRMS</option><option value="/projects/admin-dev?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» Admin</option><option value="/projects/finance-dev?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» Finance</option><option value="/projects/hr?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» HR</option><option value="/projects/it?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» IT</option><option value="/projects/marketing-dev?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» Marketing</option><option value="/projects/training-dev?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» Training</option><option value="/projects/mailsdb?jump=wiki">&nbsp;&nbsp;» MailsDB</option><option value="/projects/merrin3-0?jump=wiki">&nbsp;&nbsp;» Merrin3.0</option><option value="/projects/new-journal-committee?jump=wiki">&nbsp;&nbsp;» New Journal Committee</option><option value="/projects/new-product-service-committee?jump=wiki">&nbsp;&nbsp;» New Product/Service Committee</option><option value="/projects/sciprints?jump=wiki">&nbsp;&nbsp;» Preprints</option><option value="/projects/strategic-planning-committee?jump=wiki">&nbsp;&nbsp;» Publishing Statistics Committee</option><option value="/projects/redmine?jump=wiki">&nbsp;&nbsp;» Redmine dev</option><option value="/projects/sciprofiles?jump=wiki">&nbsp;&nbsp;» SciProfiles</option><option value="/projects/si-committee?jump=wiki">&nbsp;&nbsp;» SI Committee</option><option value="/projects/statsi?jump=wiki">&nbsp;&nbsp;» statsi</option><option value="/projects/topics-committee?jump=wiki">&nbsp;&nbsp;» Topics</option><option value="/projects/website-committee?jump=wiki">&nbsp;&nbsp;» Website Committee</option><option value="/projects/mdpi-cn-committee?jump=wiki">&nbsp;&nbsp;&nbsp;&nbsp;» mdpi.cn committee</option><option value="/projects/english-editing?jump=wiki">English Editing</option><option value="/projects/topic?jump=wiki">&nbsp;&nbsp;» Topics English Editing</option><option value="/projects/internal-violation?jump=wiki">Internal Violation</option><option value="/projects/its-wuhan-office?jump=wiki">Wuhan Office</option><option value="/projects/it-support?jump=wiki">IT support</option><option value="/projects/journal-development-management?jump=wiki">Journal Development &amp; Management </option><option value="/projects/indexing-archiving?jump=wiki">&nbsp;&nbsp;» Indexing &amp; Archiving</option><option value="/projects/public-relations-pr?jump=wiki">&nbsp;&nbsp;» Public Relations （PR）</option><option value="/projects/publishing-manager?jump=wiki">&nbsp;&nbsp;» Publishing Manager</option><option selected="selected" value="/projects/journal-mathematics?jump=wiki">Journal Mathematics</option><option value="/projects/mailinglist?jump=wiki">Mailing List</option><option value="/projects/call-for-reading?jump=wiki">&nbsp;&nbsp;» Call-for-Reading</option><option value="/projects/feature-paper-invitation?jump=wiki">&nbsp;&nbsp;» Feature Paper Invitation</option><option value="/projects/mailinglist-lookup?jump=wiki">&nbsp;&nbsp;» List Look-up</option><option value="/projects/si-planning?jump=wiki">&nbsp;&nbsp;» Special Issue Planning</option><option value="/projects/special-issue-prints?jump=wiki">MDPI Books</option><option value="/projects/mdpi-lab?jump=wiki">MDPI Lab</option><option value="/projects/project-department?jump=wiki">Open Tasks from Project Department</option><option value="/projects/publishing-content-check?jump=wiki">Publishing Content Check</option><option value="/projects/figure-quality-improvements?jump=wiki">&nbsp;&nbsp;» Figure Quality Improvements</option><option value="/projects/training-documents?jump=wiki">Reference Documents</option><option value="/projects/case-study?jump=wiki">&nbsp;&nbsp;» Case Study</option><option value="/projects/cope-case-study?jump=wiki">&nbsp;&nbsp;» COPE case study</option><option value="/projects/ethic-committee?jump=wiki">&nbsp;&nbsp;» Ethic Committee</option><option value="/projects/sales?jump=wiki">Sales</option><option value="/projects/section-pr?jump=wiki">Section PR</option><option value="/projects/publishers-aps?jump=wiki">Section-Publishers &amp; APs</option><option value="/projects/ethercalc?jump=wiki">Shared form</option><option value="/projects/susy?jump=wiki">Susy (Submission System)</option><option value="/projects/training-projects?jump=wiki">Training Projects</option><option value="/projects/website-content?jump=wiki">Website Content</option><option value="/projects/add-rb?jump=wiki">&nbsp;&nbsp;» Add RB</option><option value="/projects/editorial-board-changes?jump=wiki">&nbsp;&nbsp;» Editorial Board Members Approval &amp; Documents</option><option value="/projects/ms-update?jump=wiki">&nbsp;&nbsp;» MS Update after Issue Release</option><option value="/projects/new-journal-website?jump=wiki">&nbsp;&nbsp;» New Journal Website</option><option value="/projects/va?jump=wiki">&nbsp;&nbsp;» Video Abstract Approve &amp; Document</option></select>
+    </div>
+
+    <h1>Journal Mathematics <a href="https://redmine.mdpi.cn/projects/si-planning/issues?utf8=%E2%9C%93&amp;set_filter=1&amp;f[]=status_id&amp;op[status_id]==&amp;v[status_id][]=13&amp;f[]=cf_10&amp;op[cf_10]==&amp;v[cf_10][]=Mathematics&amp;f[]=&amp;c[]=cf_25&amp;c[]=cf_10&amp;c[]=tracker&amp;c[]=subject&amp;c[]=status&amp;c[]=assigned_to&amp;c[]=author&amp;c[]=updated_on&amp;sort=updated_on%3Adesc&amp;per_page=100">[Mathematics CfP]</a></h1>
+    
+    <div id="main-menu">
+        <ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics" class="overview">Overview</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/activity" class="activity">Activity</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/issues" class="issues">Issues</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/issues/new" accesskey="7" class="new-issue">New issue</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/issues/calendar" class="calendar">Calendar</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/news" class="news">News</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/dmsf" class="dmsf">DMSF</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/settings" class="settings">Settings</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          
+<h3>Wiki</h3>
+
+<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki">Start page</a><br>
+<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/index">Index by title</a><br>
+<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/date_index">Index by date</a><br>
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit" accesskey="e" class="icon icon-edit">Edit</a>
+  <a href="https://redmine.mdpi.cn/watchers/watch?object_id=3714&amp;object_type=wiki_page" class="wiki_page-3714-watcher icon icon-fav-off" data-method="post" data-remote="true" rel="nofollow">Watch</a>
+  <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/protect?protected=1" class="icon icon-lock" data-method="post" rel="nofollow">Lock</a>
+  
+  <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/rename" class="icon icon-move">Rename</a>
+  <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN" class="icon icon-del" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a>
+<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/history" class="icon icon-history">History</a>
+<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/change_privacy/1" class="icon icon-hide" data-method="post" rel="nofollow">Hide</a></div>
+
+<p class="breadcrumb"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/Guidebook_for_Mathematics">Guidebook for Mathematics</a> » </p>
+
+
+<div class="wiki wiki-page">
+  <p style="font-weight:bold;font-size:20px;">Special Issue Managing <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_EN" class="wiki-page">(English Version)</a></p>
+
+
+	<ul class="toc right"><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#1-GEEBMRB-%E9%82%80%E8%AF%B7%E6%9D%A1%E4%BB%B6">1. GE/EBM/RB 邀请条件</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#2-%E5%85%8D%E8%B4%B9%E5%92%8C%E6%8A%98%E6%89%A3">2. 免费和折扣</a><ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#21-%E5%9F%BA%E6%9C%AC%E8%A6%81%E6%B1%82">2.1 基本要求</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#22-%E6%8A%98%E6%89%A3%E6%95%B0%E9%87%8F">2.2 折扣数量</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#22-%E7%BC%96%E5%A7%94%E7%9A%84%E6%8A%98%E6%89%A3">2.2 编委的折扣</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#24-%E4%BC%98%E6%83%A0%E5%88%B8%E7%94%B3%E8%AF%B7%E6%AD%A5%E9%AA%A4">2.4 优惠券申请步骤</a></li></ul>
+</li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#3-%E7%89%B9%E5%88%8A%E4%B8%8A%E7%BA%BF%E6%B5%81%E7%A8%8B">3. 特刊上线流程</a><ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#31-%E6%96%B0%E5%BB%BA%E7%89%B9%E5%88%8A">3.1 新建特刊</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#32-%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A">3.2 可行性分析报告</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#33-Feasibility-Check-publisher%E5%AE%A1%E6%89%B9">3.3 Feasibility Check (publisher审批)</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#34-Pending-Planned-Papers">3.4 Pending Planned Papers</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#35-Final-Approval">3.5 Final Approval</a></li></ul>
+</li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#4-%E7%89%B9%E5%88%8A%E7%BB%B4%E6%8A%A4">4. 特刊维护</a><ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#41-Special-Issue-Note-%E6%A0%87%E5%87%86%E6%A0%BC%E5%BC%8F">4.1 Special Issue Note 标准格式</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#42-%E6%9C%9F%E5%88%8A%E6%A3%80%E6%9F%A5">4.2 期刊检查</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#43-Section%E8%B4%9F%E8%B4%A3%E4%BA%BA%E6%A3%80%E6%9F%A5">4.3 Section负责人检查</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#44-%E7%89%B9%E5%88%8A%E5%BB%B6%E6%9C%9F">4.4 特刊延期</a></li></ul>
+</li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#5-%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF">5. 邮件模板</a><ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#51-GE%E6%B2%9F%E9%80%9A%E5%BB%BA%E7%89%B9%E5%88%8A">5.1 GE沟通建特刊</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#52-GE%E6%B2%9F%E9%80%9A%E7%BB%B4%E6%8A%A4%E7%89%B9%E5%88%8A">5.2 GE沟通维护特刊</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#53-%E4%BD%9C%E8%80%85%E6%B2%9F%E9%80%9A">5.3 作者沟通</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#54-%E5%85%B6%E4%BB%96%E6%A8%A1%E6%9D%BF">5.4 其他模板</a></li></ul>
+</li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#6-Call-for-Reading-CfR">6. Call for Reading (CfR)</a><ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#61-CfR-by-susy">6.1 CfR by susy</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#62-CfR-by-GE">6.2 CfR by GE</a></li></ul>
+</li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#7-Special-Issue-Book">7. Special Issue Book</a></li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#8-SIE%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E5%92%8C%E8%A6%81%E6%B1%82">8. SIE评价指标和要求</a><ul><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#81-SIE%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87">8.1 SIE评价指标</a></li></ul>
+</li><li><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#-%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">* 参考资料</a></li></ul>
+
+
+	<p style="font-weight:bold;font-size:16px;"> <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_tasks" class="wiki-page">✉️ 最新通知和工作重点记录</a></p>
+
+
+	<a name="1-GEEBMRB-邀请条件"></a>
+<h1>1. <acronym title="Guest Editor">GE</acronym>/<acronym title="Editorial Board Member">EBM</acronym>/<acronym title="Review Board member">RB</acronym> 邀请条件<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#1-GEEBMRB-%E9%82%80%E8%AF%B7%E6%9D%A1%E4%BB%B6" class="wiki-anchor">¶</a></h1>
+
+
+	<table>
+		<tbody><tr>
+			<th style="text-align:center;">Current<br>Affiliation</th>
+			<th style="text-align:center;"> <span style="background:yellow;">New Zone 1</span> (Except for China)<br>&amp; <span style="background:yellow;">South Africa</span> </th>
+			<th style="text-align:center;">China Top 1-11 Univ<br>&amp; Hong Kong, Macau </th>
+			<th style="text-align:center;">China Top 12-22 Univ</th>
+			<th style="text-align:center;">China Top 23-55 Univ</th>
+			<th style="text-align:center;">China Whitelist</th>
+		</tr>
+		<tr>
+			<th style="text-align:center;">EBM</th>
+			<td style="text-align:center;">Assoc. Prof. 及以上<br>H-index≥15, Pure Zone 1<br>(Priority: USA, UK, CA, DE, AU)<br>(Secondly: JP, FR, AT, IL)<br><span style="background:yellow;">（其他一区国家仅邀请截刊不重开的GE）</span></td>
+			<td style="text-align:center;">Assoc. Prof. 及以上<br>H-index≥15 (Scopus)</td>
+			<td style="text-align:center;">Assoc. Prof. 及以上<br>H-index≥25 (Scopus)</td>
+			<td style="text-align:center;">Assoc. Prof. 及以上<br>H-index≥30 (Scopus)</td>
+			<td style="text-align:center;"> - </td>
+		</tr>
+		<tr>
+			<th style="text-align:center;">GE</th>
+			<td style="text-align:center;">Assoc. Prof. 及以上<br>H-index≥10<br>≥15 (Scopus) for TW, KR</td>
+			<td style="text-align:center;">Assoc. Prof. 及以上<br>H-index≥10 (Scopus)</td>
+			<td style="text-align:center;" colspan="2">Assoc. Prof. 及以上<br>H-index≥20 (Scopus)</td>
+			<td style="text-align:center;">-</td>
+		</tr>
+		<tr>
+			<th style="text-align:center;">RB</th>
+			<td style="text-align:center;">Dr. 及以上<br>近五年发文5篇<br>H-index≥5 (Scopus)<br>给Mathematics审过稿且报告质量好</td>
+			<td style="text-align:center;" colspan="5">Dr. 及以上<br>近五年发文5篇<br>H-index≥10 (Scopus)<br>给Mathematics审过稿且报告质量好</td>
+		</tr>
+	</tbody></table>
+
+
+
+
+	<ul>
+	<li>不要邀请Independent Researcher和只在公司任职的学者当EBM/GE/RB; 不要邀请本期刊其他同事的EBM/GE/TAP/RB（超过6月也不行，除非对方同意）; <span style="background:yellow;">特刊截刊不重开的一区GE可邀请加入EB/TAP，满足h-index即可，不受国家限制</span> </li>
+		<li><span style="background:yellow;">不要邀请China Medical University (tw)及其附属机构的学者，其他台湾和韩国学者注意看合作者和投稿记录</span></li>
+		<li><span style="background:yellow;">目前在Zone 1国家工作的学者即可算作Zone 1，但要确保他们不来自SA,EG,PK，且与这些国家没有合作</span></li>
+		<li>英国、澳大利亚等国家的Senior Lecture、Reader等同于Assoc. Prof.；中国的副研究员等同于Assoc. Prof. </li>
+		<li><span style="color:red;">可以邀RB和TAP建特刊，但是需要邀请到符合GE资质的Senior学者当co-GE，且必须提供3~8篇pp才能上线</span></li>
+		<li>禁止Topic: <span style="background:pink;">Pythagorean fuzzy</span>; <span style="background:pink;">Neutrosophic fuzzy</span>; <span style="background:pink;">Picture fuzzy</span>; <span style="background:pink;">Grey fuzzy</span>; <span style="background:pink;">q-rung Orthopair fuzzy</span>; <span style="background:pink;">Conformable (fractional) derivatives</span>; <span style="background:pink;">Jumarie derivatives</span>; <span style="background:pink;">Atangana-Baleanu derivatives</span>; <span style="background:pink;">Caputo-Fabrizio derivatives</span>; <span style="background:pink;">Katugampola derivative</span>; <span style="background:pink;">Geometric Function Analysis (部分话题)</span>; <span style="background:pink;">Mathematics Education</span></li>
+		<li>敏感Topic: <span style="background:pink;">Fixed Point（<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_tasks#2021%E5%B9%B412%E6%9C%88%E5%B7%A5%E4%BD%9C%E5%86%85%E5%AE%B9" class="wiki-page">详情</a>）</span>; <span style="background:pink;">Mathematical Psychology（勿主动邀请）</span></li>
+		<li>特殊Topic: <br><span style="background:lightgreen;">(a) Computer Science相关方向</span>: GE/EB必须满足额外条件 H-index≥15 (Scopus)<br><span style="background:lightgreen;">(b) Fuzzy Set Section相关方向</span>: 可以邀请H-index≥20，并且有一区背景（祖籍一区并有一区的合作者）但目前在 Brazil/India/Vietnam/Serbia 工作的学者当GE<br><span style="background:lightgreen;">(c) Algebra and Geometry相关方向</span>: 可以邀请H-index≥20，并且有一区背景（祖籍一区并有一区的合作者）但目前在 Brazil/India 工作的学者当GE<br><span style="background:lightgreen;">(d) Finance, Business, Marketing&amp;Management相关方向</span>: 需要有数学相关教育/工作背景，或近5年有5篇发文在数学相关期刊上（如Journal of Computational Finance，Quantitative Finance等）</li>
+	</ul>
+
+
+<blockquote>
+
+	<p>China Top 1–11 Universities:</p>
+
+
+	<table>
+		<tbody><tr>
+			<td>Beijing University</td>
+			<td>北京大学</td>
+			<td></td>
+			<td>Shan Dong University</td>
+			<td>山东大学</td>
+			<td></td>
+			<td>Chinese Academy of Sciences</td>
+			<td>中科院</td>
+			<td></td>
+			<td>Shanghai Jiaotong University</td>
+			<td>上海交通大学</td>
+		</tr>
+		<tr>
+			<td>Fudan University</td>
+			<td>复旦大学</td>
+			<td></td>
+			<td>Sun Yat-sen University</td>
+			<td>中山大学</td>
+			<td></td>
+			<td>Zhejiang University</td>
+			<td>浙江大学</td>
+			<td></td>
+			<td>Southeast University</td>
+			<td>东南大学</td>
+		</tr>
+		<tr>
+			<td>Tsinghua University</td>
+			<td>清华大学</td>
+			<td></td>
+			<td>University of Science and Technology of China</td>
+			<td>中国科学技术大学</td>
+			<td></td>
+			<td>Xi'an Jiaotong University</td>
+			<td>西安交通大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody></table>
+
+
+
+
+	<p>China Top 12–22 Universities:</p>
+
+
+	<table>
+		<tbody><tr>
+			<td>Nankai University</td>
+			<td>南开大学</td>
+			<td></td>
+			<td>Northeast Normal University</td>
+			<td>东北师范大学</td>
+			<td></td>
+			<td>National University of Defense Technology</td>
+			<td>国防科技大学</td>
+			<td></td>
+			<td>Nanjing University</td>
+			<td>南京大学</td>
+		</tr>
+		<tr>
+			<td>Renmin University of China</td>
+			<td>中国人民大学</td>
+			<td></td>
+			<td>Xiamen University</td>
+			<td>厦门大学</td>
+			<td></td>
+			<td>Huazhong University of Science and Technology</td>
+			<td>华中科技大学</td>
+			<td></td>
+			<td>Tongji University</td>
+			<td>同济大学</td>
+		</tr>
+		<tr>
+			<td>Beijing Normal University</td>
+			<td>北京师范大学</td>
+			<td></td>
+			<td>Harbin Institute of Technology</td>
+			<td>哈尔滨工业大学</td>
+			<td></td>
+			<td>University of Electronic Science and Technology</td>
+			<td>电子科技大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody></table>
+
+
+
+
+	<p>China Top 23-55 Universities:</p>
+
+
+	<table>
+		<tbody><tr>
+			<td>Chongqing University</td>
+			<td>重庆大学</td>
+			<td></td>
+			<td>Lanzhou University</td>
+			<td>兰州大学</td>
+			<td></td>
+			<td>China University of Mining and Technology</td>
+			<td>中国矿业大学</td>
+			<td></td>
+			<td>China University of Petroleum</td>
+			<td>中国石油大学</td>
+		</tr>
+		<tr>
+			<td>Dalian University of Technology</td>
+			<td>大连理工大学</td>
+			<td></td>
+			<td>East China University of Science and Technology</td>
+			<td>华东理工大学</td>
+			<td></td>
+			<td>Sichuan University</td>
+			<td>四川大学</td>
+			<td></td>
+			<td>Wuhan University</td>
+			<td>武汉大学</td>
+		</tr>
+		<tr>
+			<td>University of Science and Technology Beijing</td>
+			<td>北京科技大学</td>
+			<td></td>
+			<td>Wuhan University of Technology</td>
+			<td>武汉理工大学</td>
+			<td></td>
+			<td>Beijing Institute of Technology</td>
+			<td>北京理工大学</td>
+			<td></td>
+			<td>Suzhou University</td>
+			<td>苏州大学</td>
+		</tr>
+		<tr>
+			<td>Nanjing Agricultural University</td>
+			<td>南京农业大学</td>
+			<td></td>
+			<td>South China University of Technology</td>
+			<td>华南理工大学</td>
+			<td></td>
+			<td>Fuzhou University</td>
+			<td>福州大学</td>
+			<td></td>
+			<td>Beijing University of Chemical Technology</td>
+			<td>北京化工大学</td>
+		</tr>
+		<tr>
+			<td>University of Chinese Academy of Sciences</td>
+			<td>中国科学院大学</td>
+			<td></td>
+			<td>Tianjin University</td>
+			<td>天津大学</td>
+			<td></td>
+			<td>Jilin University</td>
+			<td>吉林大学</td>
+			<td></td>
+			<td>East China Normal University</td>
+			<td>华东师范大学</td>
+		</tr>
+		<tr>
+			<td>Zhengzhou University</td>
+			<td>郑州大学</td>
+			<td></td>
+			<td>Northwestern Polytechnical University</td>
+			<td>西北工业大学</td>
+			<td></td>
+			<td>China University of Geosciences</td>
+			<td>中国地质大学</td>
+			<td></td>
+			<td>Institute of Applied Physics and Computational Mathematics</td>
+			<td>应用物理与计算数学研究所</td>
+		</tr>
+		<tr>
+			<td>Hunan University</td>
+			<td>湖南大学</td>
+			<td></td>
+			<td>Central South University</td>
+			<td>中南大学</td>
+			<td></td>
+			<td>Jiangsu University</td>
+			<td>江苏大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Shanghai University</td>
+			<td>上海大学</td>
+			<td></td>
+			<td>China Agricultural University</td>
+			<td>中国农业大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody></table>
+
+
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-ac7ebace-show" onclick="$(&#39;#collapse-ac7ebace-show, #collapse-ac7ebace-hide&#39;).toggle(); $(&#39;#collapse-ac7ebace&#39;).fadeToggle(150);; return false;">China Universities in Whitelist (Top 55-)</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-ac7ebace-hide" onclick="$(&#39;#collapse-ac7ebace-show, #collapse-ac7ebace-hide&#39;).toggle(); $(&#39;#collapse-ac7ebace&#39;).fadeToggle(150);; return false;" style="display:none;">China Universities in Whitelist (Top 55-)</a></p><div class="collapsed-text" id="collapse-ac7ebace" style="display:none;"><table>
+		<tbody><tr>
+			<td>Institute of Chemistry Cas</td>
+			<td>中国科学院化学研究所</td>
+			<td></td>
+			<td>Nanjing Normal University</td>
+			<td>南京师范大学</td>
+			<td></td>
+			<td>National Astronomical Observatory Cas</td>
+			<td>中国科学院国家天文台</td>
+			<td></td>
+			<td>Qufu Normal University</td>
+			<td>曲阜师范学院</td>
+		</tr>
+		<tr>
+			<td>Changchun Institute of Applied Chemistry Cas</td>
+			<td>长春应用化学研究所</td>
+			<td></td>
+			<td>Qingdao University</td>
+			<td>青岛大学</td>
+			<td></td>
+			<td>Guangdong University of Technology</td>
+			<td>广东工业大学</td>
+			<td></td>
+			<td>Jiangxi Normal University</td>
+			<td>江西师范大学</td>
+		</tr>
+		<tr>
+			<td>Beihang University</td>
+			<td>北京航空航天大学</td>
+			<td></td>
+			<td>Hefei University of Technology</td>
+			<td>合肥工业大学</td>
+			<td></td>
+			<td>Nantong University</td>
+			<td>南通大学</td>
+			<td></td>
+			<td>Tianjin Polytechnic University</td>
+			<td>天津工业大学</td>
+		</tr>
+		<tr>
+			<td>Chinese Academy of Agricultural Sciences</td>
+			<td>中国农业科学院</td>
+			<td></td>
+			<td>China Pharmaceutical University</td>
+			<td>中国药科大学</td>
+			<td></td>
+			<td>Henan Normal University</td>
+			<td>河南师范大学</td>
+			<td></td>
+			<td>Institute of Automation Cas</td>
+			<td>自动化研究所</td>
+		</tr>
+		<tr>
+			<td>Institute of Physics Cas</td>
+			<td>中国科学院物理研究所</td>
+			<td></td>
+			<td>Yangzhou University</td>
+			<td>扬州大学</td>
+			<td></td>
+			<td>Kunming University of Science and Technology</td>
+			<td>昆明理工大学</td>
+			<td></td>
+			<td>Northwest Normal University China</td>
+			<td>中国西北师范大学</td>
+		</tr>
+		<tr>
+			<td>Shanghai Institutes for Biological Sciences Cas</td>
+			<td>上海生命科学研究所</td>
+			<td></td>
+			<td>Harbin Engineering University</td>
+			<td>哈尔滨工程大学</td>
+			<td></td>
+			<td>Shantou University</td>
+			<td>汕头大学</td>
+			<td></td>
+			<td>Wenzhou University</td>
+			<td>温州大学</td>
+		</tr>
+		<tr>
+			<td>Dalian Institute of Chemical Physics Cas</td>
+			<td>大连化学物理研究所</td>
+			<td></td>
+			<td>North China Electric Power University</td>
+			<td>华北电力大学</td>
+			<td></td>
+			<td>Zhejiang Sci Tech University</td>
+			<td>浙江理工大学</td>
+			<td></td>
+			<td>Hebei University</td>
+			<td>河北大学</td>
+		</tr>
+		<tr>
+			<td>Institute of High Energy Physics Cas</td>
+			<td>中国科学院高能物理研究所</td>
+			<td></td>
+			<td>Beijing Jiaotong University</td>
+			<td>北京交通大学</td>
+			<td></td>
+			<td>Yanshan University</td>
+			<td>燕山大学</td>
+			<td></td>
+			<td>Changchun Institute of Optics Fine Mechanics Physics Cas</td>
+			<td>长春光学精密机械物理研究所</td>
+		</tr>
+		<tr>
+			<td>Shanghai Institute of Organic Chemistry Cas</td>
+			<td>上海有机化学研究所</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Guangxi University</td>
+			<td>广西大学</td>
+			<td></td>
+			<td>South China Sea Institute of Oceanology Cas</td>
+			<td>中国科学院南海海洋研究所</td>
+		</tr>
+		<tr>
+			<td>Huazhong Agricultural University</td>
+			<td>华中农业大学</td>
+			<td></td>
+			<td>Institute of Geographic Sciences Natural Resources Research Cas</td>
+			<td>地理科学研究所自然资源研究所</td>
+			<td></td>
+			<td>Institute of Semiconductors Cas</td>
+			<td>中国科学院半导体研究所</td>
+			<td></td>
+			<td>Institute of Hydrobiology Cas</td>
+			<td>中国科学院水生生物研究所</td>
+		</tr>
+		<tr>
+			<td>Nanjing University of Science and Technology</td>
+			<td>南京理工大学</td>
+			<td></td>
+			<td>Guangzhou Institute of Geochemistry Cas</td>
+			<td>广州地球化学研究所</td>
+			<td></td>
+			<td>Shanghai Normal University</td>
+			<td>上海师范大学</td>
+			<td></td>
+			<td>Northeast Agricultural University China</td>
+			<td>中国东北农业大学</td>
+		</tr>
+		<tr>
+			<td>Northwest A&amp;F University</td>
+			<td>西北农林大学</td>
+			<td></td>
+			<td>South China Agricultural University</td>
+			<td>华南农业大学</td>
+			<td></td>
+			<td>Shenyang Pharmaceutical University</td>
+			<td>沈阳药科大学</td>
+			<td></td>
+			<td>Fujian Agriculture Forestry University</td>
+			<td>福建农林大学</td>
+		</tr>
+		<tr>
+			<td>Jiangnan University</td>
+			<td>江南大学</td>
+			<td></td>
+			<td>University of Jinan</td>
+			<td>济南大学</td>
+			<td></td>
+			<td>Yunnan University</td>
+			<td>云南大学</td>
+			<td></td>
+			<td>Huaqiao University</td>
+			<td>华侨大学</td>
+		</tr>
+		<tr>
+			<td>Nanjing Tech University</td>
+			<td>南京工业大学</td>
+			<td></td>
+			<td>Shanghai Institute of Materia Medica Cas</td>
+			<td>上海市药物研究所</td>
+			<td></td>
+			<td>Hunan Normal University</td>
+			<td>湖南师范大学</td>
+			<td></td>
+			<td>Hangzhou Dianzi University</td>
+			<td>杭州电子科技大学</td>
+		</tr>
+		<tr>
+			<td>National Center for Nanoscience Technology China</td>
+			<td>中国国家纳米科学中心</td>
+			<td></td>
+			<td>Shaanxi Normal University</td>
+			<td>陕西师范大学</td>
+			<td></td>
+			<td>Shandong Agricultural University</td>
+			<td>山东农业大学</td>
+			<td></td>
+			<td>Chinese Academy of Forestry</td>
+			<td>中国林业科学研究院</td>
+		</tr>
+		<tr>
+			<td>Institute of Metal Research Cas</td>
+			<td>中国科学院金属研究所</td>
+			<td></td>
+			<td>Nanjing University of Information Science and Technology</td>
+			<td>南京信息工程大学</td>
+			<td></td>
+			<td>State Key Lab Oncology South China</td>
+			<td>华南肿瘤学国家重点实验室</td>
+			<td></td>
+			<td>Tianjin University Science and Technology</td>
+			<td>天津科技大学</td>
+		</tr>
+		<tr>
+			<td>Southwest University China</td>
+			<td>中国西南大学</td>
+			<td></td>
+			<td>Institute of Process Engineering Cas</td>
+			<td>中国科学院过程工程研究所</td>
+			<td></td>
+			<td>Chinese Center for Disease Control Prevention</td>
+			<td>中国疾病预防控制中心</td>
+			<td></td>
+			<td>State Oceanic Administration</td>
+			<td>国家海洋局</td>
+		</tr>
+		<tr>
+			<td>Nanjing University of Aeronautics Astronautics</td>
+			<td>南京航空航天大学</td>
+			<td></td>
+			<td>Southwest Jiaotong University</td>
+			<td>西南交通大学</td>
+			<td></td>
+			<td>Institute of Oceanology Cas</td>
+			<td>中国科学院海洋研究所</td>
+			<td></td>
+			<td>Collaborative Innovation Center&nbsp;of&nbsp;Chemical Science&nbsp;and&nbsp;Engineering&nbsp;(Tianjin)&nbsp;</td>
+			<td>天津化学化工协同创新中心</td>
+		</tr>
+		<tr>
+			<td>Ocean University of China</td>
+			<td>中国海洋大学</td>
+			<td></td>
+			<td>Institute of Atmospheric Physics Cas</td>
+			<td>中国科学院大气物理研究所</td>
+			<td></td>
+			<td>Capital Normal University</td>
+			<td>首都师范大学</td>
+			<td></td>
+			<td>China Jiliang University</td>
+			<td>中国计量大学</td>
+		</tr>
+		<tr>
+			<td>Northeastern University China</td>
+			<td>中国东北大学</td>
+			<td></td>
+			<td>Shanghai Institute of Applied Physics Cas</td>
+			<td>上海应用物理研究所</td>
+			<td></td>
+			<td>Sichuan Agricultural University</td>
+			<td>四川农业大学</td>
+			<td></td>
+			<td>Nanjing Forestry University</td>
+			<td>南京林业大学</td>
+		</tr>
+		<tr>
+			<td>Donghua University</td>
+			<td>东华大学</td>
+			<td></td>
+			<td>Institute of Genetics Developmental Biology Cas</td>
+			<td>中国科学院遗传发育生物学研究所</td>
+			<td></td>
+			<td>Shandong University of Science and Technology</td>
+			<td>山东科技大学</td>
+			<td></td>
+			<td>Institute of Urban Environment Cas</td>
+			<td>中国科学院城市环境研究所</td>
+		</tr>
+		<tr>
+			<td>Jinan University</td>
+			<td>暨南大学</td>
+			<td></td>
+			<td>Nanjing University of Posts Telecommunications</td>
+			<td>南京邮电大学</td>
+			<td></td>
+			<td>Chinese Academy of Engineering Physics</td>
+			<td>中国工程物理研究院</td>
+			<td></td>
+			<td>Shanghai Institute of Optics Fine Mechanics</td>
+			<td>上海光学精密机械研究所</td>
+		</tr>
+		<tr>
+			<td>Shanghai Institute of Ceramics Cas</td>
+			<td>上海硅酸盐研究所</td>
+			<td></td>
+			<td>Ningbo University</td>
+			<td>宁波大学</td>
+			<td></td>
+			<td>Shandong Normal University</td>
+			<td>山东师范大学</td>
+			<td></td>
+			<td>Qilu University of Technology</td>
+			<td>齐鲁工业大学</td>
+		</tr>
+		<tr>
+			<td>Central China Normal University</td>
+			<td>华中师范大学</td>
+			<td></td>
+			<td>Hohai University</td>
+			<td>河海大学</td>
+			<td></td>
+			<td>China Meteorological Administration</td>
+			<td>中国气象局</td>
+			<td></td>
+			<td>Hebei University of Technology</td>
+			<td>河北工业大学</td>
+		</tr>
+		<tr>
+			<td>Research Center for Eco Environmental Sciences Rcees</td>
+			<td>生态环境科学研究中心</td>
+			<td></td>
+			<td>Zhejiang Normal University</td>
+			<td>浙江师范大学</td>
+			<td></td>
+			<td>Institute of Soil Science Cas</td>
+			<td>中国科学院土壤科学研究所</td>
+			<td></td>
+			<td>Hunan Agricultural University</td>
+			<td>湖南农业大学</td>
+		</tr>
+		<tr>
+			<td>Ministry of Education China</td>
+			<td>中国教育部</td>
+			<td></td>
+			<td>Beijing Forestry University</td>
+			<td>北京林业大学</td>
+			<td></td>
+			<td>Kunming Institute of Botany Cas</td>
+			<td>昆明植物研究所</td>
+			<td></td>
+			<td>Xinjiang University</td>
+			<td>新疆大学</td>
+		</tr>
+		<tr>
+			<td>Shenzhen University</td>
+			<td>深圳大学</td>
+			<td></td>
+			<td>Xiangtan University</td>
+			<td>湘潭大学</td>
+			<td></td>
+			<td>Academy of Mathematics System Sciences Cas</td>
+			<td>中国科学院数学与系统科学研究院</td>
+			<td></td>
+			<td>University of South China</td>
+			<td>华南大学</td>
+		</tr>
+		<tr>
+			<td>University Town of Shenzhen</td>
+			<td>深圳大学城</td>
+			<td></td>
+			<td>Shanxi University</td>
+			<td>山西大学</td>
+			<td></td>
+			<td>University of Shanghai for Science and Technology</td>
+			<td>上海理工大学</td>
+			<td></td>
+			<td>Chinese Academy of Fishery Sciences</td>
+			<td>中国水产科学院</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Hangzhou Normal University</td>
+			<td>杭州师范大学</td>
+			<td></td>
+			<td>Northeast Forestry University China</td>
+			<td>中国东北林业大学</td>
+			<td></td>
+			<td>North China University of Science and Technology</td>
+			<td>华北理工大学</td>
+		</tr>
+		<tr>
+			<td>Nanchang University</td>
+			<td>南昌大学</td>
+			<td></td>
+			<td>Institute of Botany Cas</td>
+			<td>中科院植物研究所</td>
+			<td></td>
+			<td>Shenzhen Institute of Advanced Technology Cas</td>
+			<td>深圳市先进技术研究院</td>
+			<td></td>
+			<td>Guizhou University</td>
+			<td>贵州大学</td>
+		</tr>
+		<tr>
+			<td>Fujian Institute of Research on The Structure of Matter Cas</td>
+			<td>福建省物质结构研究所</td>
+			<td></td>
+			<td>Beijing University of Posts Telecommunications</td>
+			<td>北京邮电大学</td>
+			<td></td>
+			<td>Southern University of Science and Technology</td>
+			<td>南方科技大学</td>
+			<td></td>
+			<td>Anhui University of Technology</td>
+			<td>安徽工业大学</td>
+		</tr>
+		<tr>
+			<td>Northwest University Xi an</td>
+			<td>西北大学(西安)</td>
+			<td></td>
+			<td>Institute of Zoology Cas</td>
+			<td>中国科学院动物研究所</td>
+			<td></td>
+			<td>China National Petroleum Corporation</td>
+			<td>中国石油天然气集团公司</td>
+			<td></td>
+			<td>Ningbo Institute of Materials Technology and Engineering Cas</td>
+			<td>宁波材料技术与工程学院</td>
+		</tr>
+		<tr>
+			<td>Lanzhou Institute of Chemical Physics Cas</td>
+			<td>兰州化学物理研究所</td>
+			<td></td>
+			<td>Chinese Academy of Geological Sciences</td>
+			<td>中国地质科学院</td>
+			<td></td>
+			<td>Hubei University</td>
+			<td>湖北大学</td>
+			<td></td>
+			<td>Wuhan University of Science and Technology</td>
+			<td>武汉科技大学</td>
+		</tr>
+		<tr>
+			<td>Xidian University</td>
+			<td>西安电子科技大学</td>
+			<td></td>
+			<td>Henan University</td>
+			<td>河南大学</td>
+			<td></td>
+			<td>Changzhou University</td>
+			<td>常州大学</td>
+			<td></td>
+			<td>Guangzhou University</td>
+			<td>广州大学</td>
+		</tr>
+		<tr>
+			<td>Zhejiang University of Technology</td>
+			<td>浙江工业大学</td>
+			<td></td>
+			<td>Qingdao University of Science and Technology</td>
+			<td>青岛科技大学</td>
+			<td></td>
+			<td>Institute of Coal Chemistry Cas</td>
+			<td>中国科学院煤炭化学研究所</td>
+			<td></td>
+			<td>Shanghai Institute of Microsystem Information Technology Cas</td>
+			<td>上海微系统信息技术研究所</td>
+		</tr>
+		<tr>
+			<td>Institute of Geology Geophysics Cas</td>
+			<td>中国科学院地质地球物理研究所</td>
+			<td></td>
+			<td>Institute of Microbiology Cas</td>
+			<td>中国科学院微生物研究所</td>
+			<td></td>
+			<td>Heilongjiang University</td>
+			<td>黑龙江大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>South China Normal University</td>
+			<td>华南师范大学</td>
+			<td></td>
+			<td>Taiyuan University of Technology</td>
+			<td>太原理工大学</td>
+			<td></td>
+			<td>Anhui Normal University</td>
+			<td>安徽师范大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Beijing University of Technology</td>
+			<td>北京工业大学</td>
+			<td></td>
+			<td>Anhui University</td>
+			<td>安徽大学</td>
+			<td></td>
+			<td>Jiangsu Normal University</td>
+			<td>江苏师范大学</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody></table>
+
+
+
+
+	<p>Excel 格式下载： <a href="https://redmine.mdpi.cn/attachments/download/7648436/Chinese%20University%20Ranking.xlsx" class="attachment">Chinese University Ranking.xlsx</a></p>
+
+
+	<ul>
+	<li>中国co-GE来自非白高校的比例应&lt;50%（不含50%）</li>
+		<li>中国co-GE如果来自非白名单高校，Scopus h-index≥30</li>
+	</ul></div><p></p>
+
+
+</blockquote>
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-e8bd06dd-show" onclick="$(&#39;#collapse-e8bd06dd-show, #collapse-e8bd06dd-hide&#39;).toggle(); $(&#39;#collapse-e8bd06dd&#39;).fadeToggle(150);; return false;">RB特殊说明</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-e8bd06dd-hide" onclick="$(&#39;#collapse-e8bd06dd-show, #collapse-e8bd06dd-hide&#39;).toggle(); $(&#39;#collapse-e8bd06dd&#39;).fadeToggle(150);; return false;" style="display:none;">RB特殊说明</a></p><div class="collapsed-text" id="collapse-e8bd06dd" style="display:none;"><ul>
+	<li>RB每月主动审稿最多5次，超过5次需联系ME</li>
+		<li>上线RB后及时更新 <a href="https://docs.google.com/spreadsheets/d/1hGbM9Fu6uUboPtedBzd--TxYqCtaPeDKKQF-SS9HjqE/edit#gid=327530953" class="external">Google在线表格</a></li>
+		<li>期刊RB数量需保持在上年度发文量的10%以内。比如Mathematics 2020年度发文2297，RB数量在2021年度不能超过229人</li>
+		<li>一旦发现有RB提交不合格报告，期刊需要在PM和publisher指导下出面沟通，如有必要应给该审稿人提供审稿培训；若一年内提交三次Poor报告（ME需要复核是否是真的poor），需通知清退该RB</li>
+		<li>期刊每年3月及9月整理RB审稿比例，若一年内审过稿件的RB数量占总RB数量的70%及以上则为正常，若不到70%会清退沉寂RBM</li>
+		<li>清退RB之前，添加该RB的SIE需协助ME向Publisher简要陈述原因，然后写信联系RB说明情况并询问解释；信里面指出如果没有收到回复，我们将认为他们不再对RB感兴趣，会将他们移除（不允许不通知RB直接移除）</li>
+		<li>被加入审稿人黑名单的学者不允许加入RB，除非学者愿意主动学习审稿流程并脱黑；RB在任职期间如被加入审稿人黑名单，将会在每年3月及9月被集中清理</li>
+		<li>其他说明见公司规定: <a class="external" href="http://blog.mdpi.lab/team/committee/guide/59">http://blog.mdpi.lab/team/committee/guide/59</a></li>
+	</ul></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-21915b36-show" onclick="$(&#39;#collapse-21915b36-show, #collapse-21915b36-hide&#39;).toggle(); $(&#39;#collapse-21915b36&#39;).fadeToggle(150);; return false;">如何让 Publisher 帮忙添加 GE</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-21915b36-hide" onclick="$(&#39;#collapse-21915b36-show, #collapse-21915b36-hide&#39;).toggle(); $(&#39;#collapse-21915b36&#39;).fadeToggle(150);; return false;" style="display:none;">如何让 Publisher 帮忙添加 GE</a></p><div class="collapsed-text" id="collapse-21915b36" style="display:none;"><p style="padding-left:2em;">1. 确保co-GE符合 <a href="http://blog.mdpi.lab/team/committee/guide/72" class="external">邀请规则</a><br>2. 在特刊页面输入GE邮箱后，点击Edit编辑GE信息，确保所有信息均填写完整；<br>3. 对于没有GE邀请记录无法Edit的，点击 <a class="external" href="https://susy.mdpi.com/user/guest_editor/add">https://susy.mdpi.com/user/guest_editor/add</a> 自行新增GE信息<br>4. 将特刊的链接和GE邮箱填在 <a href="https://docs.google.com/spreadsheets/d/1dGJVDY4V_DNLAqeuJslxwkEbiNfWmgVafYSC5NA1DHg/edit#gid=726045761" class="external">SAP Ursula在线表格</a> 中，Ursula会在2天内帮忙添加<br>5. 涉及到其他期刊或其他同事资源的，提前跟相关的同事沟通好，同时留存好聊天记录或截图</p>
+
+
+	<p style="padding-left:2em;"><img src="./SI_files/img0001.png" alt=""></p></div><p></p>
+
+
+	<pre><code>邀请前自行仔细检查资质，GE/EB 同意后请报给 Syna Mu 检查，DDL找 Nemo Guan 确定；RB报给Ashley Chang检查。 <span style="background:lightgreen;">EBM QC通过后还须填写</span><a href="https://docs.google.com/spreadsheets/d/1hGbM9Fu6uUboPtedBzd--TxYqCtaPeDKKQF-SS9HjqE/edit#gid=1383921518" class="external">EBM登记表格</a> | <a href="https://redmine.mdpi.cn/attachments/download/9441913/EBM%20approval%20from%20EiC.eml">EiC同意信附件</a></code></pre>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=2"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="2-免费和折扣"></a>
+<h1>2. 免费和折扣<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#2-%E5%85%8D%E8%B4%B9%E5%92%8C%E6%8A%98%E6%89%A3" class="wiki-anchor">¶</a></h1>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=3"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="21-基本要求"></a>
+<h2>2.1 基本要求<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#21-%E5%9F%BA%E6%9C%AC%E8%A6%81%E6%B1%82" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><span style="background:lightgreen;">邀稿作者通常需要是通讯作者或一作，以下 <strong>H-index</strong> 均指代通讯或一作</span>；所有折扣仅针对学术机构的学者（公司不享受折扣）</li>
+		<li>邀稿作者来自 <ins>USA, UK, CA, DE, AU, JP, FR, AT, IL</ins>， <strong>H-index≥10</strong>：最多给免费（不用管co-authors）; <strong>H-index≥5</strong>：最多给50%折扣; <strong>H-index&lt;5</strong>：最多给20%折扣</li>
+		<li>邀稿作者来自 <ins>其他一区国家 (CN, HK, TW, KR除外)</ins>， <span style="background:yellow;">所有co-authors均需满足 <strong><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/Country_List" class="wiki-page">Discount Country List</a></strong></span>，然后 <strong>H-index≥10(Scopus)</strong>：最多给免费; <strong>H-index≥5(Scopus)</strong>：最多给20%折扣; <strong>H-index&lt;5(Scopus)</strong>：最多给10%折扣</li>
+		<li>邀稿作者来自 <ins>CN, HK, TW, KR和非一区国家（ZA等）</ins>，不提供任何折扣; <span style="background:yellow;">GE强烈要求时不要直接回绝，请先询问ME</span> </li>
+		<li><span style="background:lightgreen;">所有 GE 可以享受一篇免费 Review（建议20页，参考文献50），不受上述条件限制</span> </li>
+		<li>为了防止作者灌水， 每个作者每年最多在 Mathematics 上发表6篇文章（只要带名字就算）</li>
+	</ul>
+
+
+<pre>Tips: GE提供colleague list询问折扣时，建议回复折扣区间（例如0-50%，最高50%）而非固定折扣，以防出现共同作者带有二三区的情况。</pre>
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=4"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="22-折扣数量"></a>
+<h2>2.2 折扣数量<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#22-%E6%8A%98%E6%89%A3%E6%95%B0%E9%87%8F" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>GE包括非纯一区学者或来自中国、台湾、韩国、非一区国家：无折扣</li>
+		<li><span style="background:yellow;">所有GE来自除上述以外的其他一区国家：总额1000%折扣</span> </li>
+		<li>默认只有100%和50%折扣类型，无特殊情况不要用到其他折扣类型</li>
+		<li>当GE来自多个国家，按照最低原则分配折扣，同时也可考虑邀稿作者所属国家情况</li>
+	</ul>
+
+
+<pre>Tips: 大部分特刊的折扣都用不完，因此建议和GE沟通时不用一开始就告诉GE特刊的折扣上限，让GE尽量去多发邀请即可。遇到需要折扣的学者，让学者提供全部信息再告知其具体折扣。</pre>
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=5"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="22-编委的折扣"></a>
+<h2>2.2 编委的折扣<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#22-%E7%BC%96%E5%A7%94%E7%9A%84%E6%8A%98%E6%89%A3" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>所有非一区的EBM/TAP/RB默认均无折扣</li>
+		<li>一区EBM每年有1篇免费，TAP每年有1篇50%折扣（Review为100%），RB有20%折扣</li>
+		<li>折扣数量和额度会根据期刊邀稿计划有所调整</li>
+	</ul>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=6"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="24-优惠券申请步骤"></a>
+<h2>2.4 优惠券申请步骤<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#24-%E4%BC%98%E6%83%A0%E5%88%B8%E7%94%B3%E8%AF%B7%E6%AD%A5%E9%AA%A4" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>在Susy的Manage Vouchers中提交优惠券申请，所有能填的信息（包括Manuscript ID）都填写完整</li>
+		<li>查询享受折扣的作者过去两年是否在我们期刊有发文，如果有，则需要在申请优惠券之前给作者发送推广信。建议将推广信情况写在优惠券note中，如 Promotion Letter Sent; No publication in the past 2 years
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-035bd2d6-show" onclick="$(&#39;#collapse-035bd2d6-show, #collapse-035bd2d6-hide&#39;).toggle(); $(&#39;#collapse-035bd2d6&#39;).fadeToggle(150);; return false;">推广信邮件模板</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-035bd2d6-hide" onclick="$(&#39;#collapse-035bd2d6-show, #collapse-035bd2d6-hide&#39;).toggle(); $(&#39;#collapse-035bd2d6&#39;).fadeToggle(150);; return false;" style="display:none;">推广信邮件模板</a></p><div class="collapsed-text" id="collapse-035bd2d6" style="display:none;"><blockquote>
+
+	<p>[Mathematics] (IF 2.258, ISSN 2227-7390) Promote Your Published Papers</p>
+
+
+	<p><strong>作者以前发表的文章引用小于等于2的情况：</strong></p>
+
+
+	<p>Thank you very much for your contribution to /Mathematics/, your manuscript mathematics-XXXXXX is now under review. We will keep you informed about the status of your manuscript.</p>
+
+
+	<p>In addition, you have published a paper/some papers in /Mathematics/ in the past two years with the citation of about XX times.</p>
+
+
+	<p>Based on your reputation and research interests, we believe that your results should attract more citations and attention. Therefore, could you please promote the paper/papers to your colleagues, friends, or related scholars by sharing the paper using the button on the right sidebar of the article page?</p>
+
+
+	<p>1. paper link<br>2. paper link</p>
+
+
+	<p>Thank you again for your support, please feel free to let me know if you encounter any problems.</p>
+
+
+	<p><strong>作者以前发表的文章引用大于等于3的情况：</strong></p>
+
+
+	<p>Thank you very much for your contribution to /Mathematics/, your manuscript mathematics-XXXXXX is now under review. We will keep you informed about the status of your manuscript.</p>
+
+
+	<p>In addition, I am glad to inform you that your paper/papers published in /Mathematics/ in 20XX has/have been cited XXX/XX times, respectively. Congratulations on your great work! To encourage open scientific discussions and increase the visibility of your results, could you please promote the paper/papers to your colleagues, friends, or related scholars by sharing the paper using the button on the right sidebar of the article page?</p>
+
+
+	<p>1. paper link<br>2. paper link</p>
+
+
+	<p>Thank you again for your support, please feel free to let me know if you encounter any problems.</p>
+
+
+</blockquote></div><p></p>
+</li>
+		<li>等待批准，其中特刊优惠券和EB优惠券等待ME批，Exception Case等待Publisher批，如果24小时未批下来请给审批人Skype留言</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=7"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="3-特刊上线流程"></a>
+<h1>3. 特刊上线流程<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#3-%E7%89%B9%E5%88%8A%E4%B8%8A%E7%BA%BF%E6%B5%81%E7%A8%8B" class="wiki-anchor">¶</a></h1>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=8"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="31-新建特刊"></a>
+<h2>3.1 新建特刊<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#31-%E6%96%B0%E5%BB%BA%E7%89%B9%E5%88%8A" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>只有转正SIE可以新建特刊（Create Special Issue）。</li>
+		<li>对于试用期SIE，需要让tutor操作并将Owner指定为徒弟邮箱（2021-05-26新规实施前，已转正或未转正SIE自己创建的特刊均可以继续跟进）。 </li>
+		<li>特刊Type有以下四种：
+	<ul>
+	<li>Normal、重开的特刊：需要可行性报告，也需要planned papers（或potential author list）</li>
+		<li>Conference：需要可行性报告，不需要planned papers</li>
+		<li>Memory、Anniversary：不需要可行性报告，也不需要planned papers</li>
+	</ul></li>
+	</ul>
+
+
+	<p style="padding-left:2em;"><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-5deddf00-show" onclick="$(&#39;#collapse-5deddf00-show, #collapse-5deddf00-hide&#39;).toggle(); $(&#39;#collapse-5deddf00&#39;).fadeToggle(150);; return false;">图片示例</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-5deddf00-hide" onclick="$(&#39;#collapse-5deddf00-show, #collapse-5deddf00-hide&#39;).toggle(); $(&#39;#collapse-5deddf00&#39;).fadeToggle(150);; return false;" style="display:none;">图片示例</a></p><div class="collapsed-text" id="collapse-5deddf00" style="display:none;"><p><img src="./SI_files/img0002.png" alt=""></p></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=9"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="32-可行性分析报告"></a>
+<h2>3.2 可行性分析报告<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#32-%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>可行性分析报告需要在 <span style="color:green;">新建每个Normal和Conference特刊时</span> 提交</li>
+		<li>修改特刊标题不需要重新提交可行性分析报告（修改特刊标题时请确保 Scope 不要产生太大变化）</li>
+	</ul>
+
+
+	<p style="padding-left:2em;"><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-eac147d4-show" onclick="$(&#39;#collapse-eac147d4-show, #collapse-eac147d4-hide&#39;).toggle(); $(&#39;#collapse-eac147d4&#39;).fadeToggle(150);; return false;">常规特刊可行性分析报告示例</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-eac147d4-hide" onclick="$(&#39;#collapse-eac147d4-show, #collapse-eac147d4-hide&#39;).toggle(); $(&#39;#collapse-eac147d4&#39;).fadeToggle(150);; return false;" style="display:none;">常规特刊可行性分析报告示例</a></p><div class="collapsed-text" id="collapse-eac147d4" style="display:none;"><p style="padding-left:4em;"><strong>Special Issue Feasibility Check Form</strong></p>
+
+
+	<p style="padding-left:2em;">1. *SI Title: <ins>Stochastic Modelling and Applied Probability in Climatology</ins></p>
+
+
+	<p style="padding-left:2em;">2. Select a Section (未打星号，可不填)</p>
+
+
+	<p style="padding-left:2em;">3. *Research Topics/Keywords: <ins>Stochastic; Probability; Climatology</ins></p>
+
+
+	<p style="padding-left:2em;">4. *SI on similar title/keywords in MDPI journal (<a class="external" href="https://reviewer-api.susy.mdpi.com/topic/special_issue?fields%5Bkeywords%5D=">https://reviewer-api.susy.mdpi.com/topic/special_issue?fields%5Bkeywords%5D=</a>)</p>
+
+
+	<p style="padding-left:2em;">Search criteria: <ins>Stochastic, Climatology</ins><br>Number of Closed SIs: <ins>0</ins><br>Number of Open SIs: <ins>1</ins><br>Link: <ins><a class="external" href="https://reviewer-api.susy.mdpi.com/topic/special_issue?fields%5Bkeywords%5D=Stochastic,%20Climatology">https://reviewer-api.susy.mdpi.com/topic/special_issue?fields%5Bkeywords%5D=Stochastic,%20Climatology</a></ins><br>Number of Pending Online SI: <ins>0</ins><br>Link: <ins><a class="external" href="https://reviewer-api.susy.mdpi.com/topic/special_issue_pending?fields%5Bkeywords%5D=Stochastic,%20Climatology">https://reviewer-api.susy.mdpi.com/topic/special_issue_pending?fields%5Bkeywords%5D=Stochastic,%20Climatology</a></ins></p>
+
+
+	<p style="padding-left:2em;">5. List journals and sections related to the title (未打星号，可不填)</p>
+
+
+	<p style="padding-left:2em;">Keywords:<br>Journals: Journal 1; Journal 2; Journal 3……</p>
+
+
+	<p style="padding-left:2em;">6. *Publication record in the SI scope, in the last 5 years, using relevant keywords</p>
+
+
+	<p style="padding-left:2em;">例1：<br>Topic: <ins class="Stochastic OR Probability"> AND (Climatology OR Medicine)</ins><br>Timespan: Last 5 years <br>Indexes: <ins>Web of Science Core Collection</ins><br>Total Results: <ins>2791</ins></p>
+
+
+	<p style="padding-left:2em;">例2：<br>Topic: <ins>Stochastic Probability Climatology</ins><br>Timespan: Last 5 years <br>Indexes: <ins>Google Scholar</ins><br>Total Results: <ins>16600</ins></p>
+
+
+	<p style="padding-left:2em;">7. *Conclusion<br>After evaluation, I found that there are only 5 similar Special Issues in MDPI journal. Among them, 2 Special Issues were already closed. There is no Pending Online Special Issue on a similar topic. <br>The Publication record indicates that there are 5000 papers published in this field in the past 5 years, so this topic is interesting and may attract many submissions. I suggest creating this Special Issue entitled "Stochastic Modelling and Applied Probability in Climatology and Medicine".</p></div><p></p>
+
+
+	<p style="padding-left:2em;"><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-bda4fe22-show" onclick="$(&#39;#collapse-bda4fe22-show, #collapse-bda4fe22-hide&#39;).toggle(); $(&#39;#collapse-bda4fe22&#39;).fadeToggle(150);; return false;">会议特刊可行性分析报告示例</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-bda4fe22-hide" onclick="$(&#39;#collapse-bda4fe22-show, #collapse-bda4fe22-hide&#39;).toggle(); $(&#39;#collapse-bda4fe22&#39;).fadeToggle(150);; return false;" style="display:none;">会议特刊可行性分析报告示例</a></p><div class="collapsed-text" id="collapse-bda4fe22" style="display:none;"><p style="padding-left:4em;"><strong>Please fill in the following form if this Special Issue is a Conference Special Issue</strong></p>
+
+
+	<p style="padding-left:2em;">1. *Conference Basic Information:<br>Conference Name: <ins>IFSA-EUSFLAT 2021</ins><br>Date: <ins>19-24 September 2021</ins><br>Location: <ins>Bratislava, Slovakia</ins><br>Conference Organizer: <ins>The European Society for Fuzzy Logic and Technology (EUSFLAT)</ins></p>
+
+
+	<p style="padding-left:2em;">2. *Edition: <br><ins>The 19th World Congress of the International Fuzzy Systems Association</ins><br><ins>The 12th Conference of the European Society for Fuzzy Logic and Technology</ins></p>
+
+
+	<p style="padding-left:2em;">3. *Attendee Numbers: <ins>about 500</ins></p>
+
+
+	<p style="padding-left:2em;">4. Publication numbers and country distribution in proceedings of the past conferences (past three editions)</p>
+
+
+	<p style="padding-left:2em;">5. Publication numbers on this topic related to your journal in proceedings of the past conferences (past three editions)</p>
+
+
+	<p style="padding-left:2em;">6. Previous SI information and publication numbers cooperated with past editions of conference</p></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=10"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="33-Feasibility-Check-publisher审批"></a>
+<h2>3.3 Feasibility Check (publisher审批)<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#33-Feasibility-Check-publisher%E5%AE%A1%E6%89%B9" class="wiki-anchor">¶</a></h2>
+
+
+	<p>审批通过后，系统才会出现GE邀请界面。 <a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-9bbfc218-show" onclick="$(&#39;#collapse-9bbfc218-show, #collapse-9bbfc218-hide&#39;).toggle(); $(&#39;#collapse-9bbfc218&#39;).fadeToggle(150);; return false;">图片示例</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-9bbfc218-hide" onclick="$(&#39;#collapse-9bbfc218-show, #collapse-9bbfc218-hide&#39;).toggle(); $(&#39;#collapse-9bbfc218&#39;).fadeToggle(150);; return false;" style="display:none;">图片示例</a></p><div class="collapsed-text" id="collapse-9bbfc218" style="display:none;"><p><img src="./SI_files/img0003.png" alt=""></p></div><p></p>
+
+
+	<p>Publisher审核通常需要半天至一天，因此SIE需要合理安排GE邀请工作</p>
+
+
+<blockquote>
+
+	<p>例1：建立几个Scope稍大的特刊，在一个特刊里邀多个GE，有同意的GE之后再和他商量一个更具体的标题；<br>例2：第一天寻找要邀请的GE（10+），并为这些GE量身定做一些特刊，集中做可行性报告并送publisher审批；第二天审批下来之后花5分钟集中邀请，然后再找第二天要邀请的GE。</p>
+
+
+</blockquote>
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=11"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="34-Pending-Planned-Papers"></a>
+<h2>3.4 Pending Planned Papers<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#34-Pending-Planned-Papers" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><span style="color:red;">所有特刊都尽可能建到Section中</span>，<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/Section_CN#1-%E4%BA%BA%E5%91%98%E9%85%8D%E5%A4%87%E5%8F%8A%E8%A6%81%E6%B1%82" class="wiki-page">找Section负责人</a>确定Deadline； <span style="color:red;">截止日期不要都设定在月底，均匀分散在10/15/20/30日</span></li>
+		<li><span style="background:yellow;">中国特刊需要8篇Planned Papers才可以继续下一步操作，其他地区特刊需要3篇Planned Papers</span> </li>
+		<li>Planned papers需要是Agreed或Title Provided，Interested不算</li>
+		<li>如果GE提供potential author list，在Upload Potential Author List处上传 <span style="color:red;">zip文件，里面包含一个Excel文件（作者列表）和GE邮件证明</span> （证明list是由GE提供的，如果GE表示愿意在特刊上线后给这些人发邀请更好）</li>
+		<li>在Pending Planned Papers阶段可以生成特刊 <span style="color:green;">网页预览，可以将链接发给GE调动其积极性，让GE邀pp更有动力</span></li>
+	</ul>
+
+
+	<p style="padding-left:2em;"><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-abc4ee01-show" onclick="$(&#39;#collapse-abc4ee01-show, #collapse-abc4ee01-hide&#39;).toggle(); $(&#39;#collapse-abc4ee01&#39;).fadeToggle(150);; return false;">PP界面与特刊预览版网页图片示例</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-abc4ee01-hide" onclick="$(&#39;#collapse-abc4ee01-show, #collapse-abc4ee01-hide&#39;).toggle(); $(&#39;#collapse-abc4ee01&#39;).fadeToggle(150);; return false;" style="display:none;">PP界面与特刊预览版网页图片示例</a></p><div class="collapsed-text" id="collapse-abc4ee01" style="display:none;"><p><img src="./SI_files/img0004.png" alt=""></p></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=12"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="35-Final-Approval"></a>
+<h2>3.5 Final Approval<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#35-Final-Approval" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li>送publisher审批，审批通过后有邮件提示，然后在特刊页面点击proceed正式上线。</li>
+		<li>预览版网页中的任何问题（如调整GE顺序，修改Title），均可写在Comments中，请Website Editor进行调整。</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=13"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="4-特刊维护"></a>
+<h1>4. 特刊维护<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#4-%E7%89%B9%E5%88%8A%E7%BB%B4%E6%8A%A4" class="wiki-anchor">¶</a></h1>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=14"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="41-Special-Issue-Note-标准格式"></a>
+<h2>4.1 Special Issue Note 标准格式<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#41-Special-Issue-Note-%E6%A0%87%E5%87%86%E6%A0%BC%E5%BC%8F" class="wiki-anchor">¶</a></h2>
+
+
+<pre>SI Owner: xxx
+Email: xxx@mdpi.com
+Skype:
+GE对特刊文章的特殊要求（如果有）
+
+Website online: date
+Ask GE conference: Yes on Date/No + Reason
+Flyer/Banner: Yes on Date/No + Reason
+EB/TE: Yes/No + Reason
+GE/EB 证书: Yes on Date/No + When
+GE invitations: 有没有让GE发邀请，发了多少 + date
+GE contact: 联系记录，按时间顺序或倒序排列
+
+First paper or XX papers published: sent on Date (相应修改发表文章数目)
+Free media/Social Media: Yes on Date/No + Reason (仅针对会议特刊) 
+Editorial and Book: 发文10篇的都要问 ，Yes on Date/No + Reason 
+CfR (GE): 发文5篇的都要问，Yes + Number/No + Reason 
+Re-open: Yes/No + Reason
+</pre>
+
+	<ul>
+	<li><span style="background:yellow;">所有Planned Papers要更新在susy上以方便统计。</span></li>
+		<li><span style="background:yellow;">每天上午10点前检查通讯和第一作者背景加在note里 "Name + Scopus链接 or Google Scholar链接"，并上传查重报告，中国作者加上作者主页。</span></li>
+		<li><span style="background:yellow;">确认APC并标记在note里，对于 <strong>同时是EB和GE的作者需要问清楚占用EB还是特刊的折扣名额</strong> ，如 "GE invited, 800 CHF", "EB's paper, free"；Planned Papers投稿提交上来之后及时在susy中修改成submitted。</span></li>
+	</ul>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=15"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="42-期刊检查"></a>
+<h2>4.2 期刊检查<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#42-%E6%9C%9F%E5%88%8A%E6%A3%80%E6%9F%A5" class="wiki-anchor">¶</a></h2>
+
+
+	<p>期刊层面每周检查所有特刊的跟进情况，具体检查内容如下：</p>
+
+
+<blockquote>
+
+	<p>第一周：还有3-6个月就要截刊的特刊的CFP和note是否标准，不是EB/TE的邀请加入EB/TE<br>第二周：截刊6个月的特刊，还有2个月要截刊的特刊的pp，并检查第一篇文章发表之后有没有通知其他pp<br>第三周：Deadline六个月以后的特刊的CFP和note是否标准，不是EB/TE的邀请加入EB/TE<br>第四周：截刊特刊的重开（发文超过5篇就可以联系GE重开），CFR，Book</p>
+
+
+</blockquote>
+
+	<p>所有检查和反馈情况均记录于在线表格中: <a class="external" href="https://docs.google.com/spreadsheets/d/1igneWscqWoPG3TvNIMlTFF8nSzNwfxovaZp0jP1Jb4g/edit#gid=602773260">https://docs.google.com/spreadsheets/d/1igneWscqWoPG3TvNIMlTFF8nSzNwfxovaZp0jP1Jb4g/edit#gid=602773260</a></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=16"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="43-Section负责人检查"></a>
+<h2>4.3 Section负责人检查<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#43-Section%E8%B4%9F%E8%B4%A3%E4%BA%BA%E6%A3%80%E6%9F%A5" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Section负责人每1-2周检查Section内的特刊（主要包括邀稿情况和CfP等），告知对应的SIE，设定SIE需要完成反馈的Deadline。</p>
+
+
+	<p><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/Section_CN#1-%E4%BA%BA%E5%91%98%E9%85%8D%E5%A4%87%E5%8F%8A%E8%A6%81%E6%B1%82" class="wiki-page">点此查看Section人员配备情况</a></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=17"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="44-特刊延期"></a>
+<h2>4.4 特刊延期<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#44-%E7%89%B9%E5%88%8A%E5%BB%B6%E6%9C%9F" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li> <span style="background:yellow;">每个特刊可以由ME延期一次 (<em>Mathematics and Computer Science</em> 找 <ins>Patty</ins>, <em>Network Science / Mathematical Physics</em> 找 <ins>Emma</ins>, <em>Other Sections</em> 找 <ins>Syna</ins>)</span> ，延期后可以发一轮新的CfP</li>
+		<li>特刊需要二次延期的可以让Ursula帮忙操作，将新Deadline填在 <a href="https://docs.google.com/spreadsheets/d/1dGJVDY4V_DNLAqeuJslxwkEbiNfWmgVafYSC5NA1DHg/edit#gid=1764011519" class="external">SAP Ursula在线表格</a> 中，等待2日即可</li>
+		<li>延期时请确保特刊已经完成第一轮CfP发送，否则将影响后续CfP发送；如果第一次延期时尚未发过CfP，请采用上一条方法让Ursula帮忙延期</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=18"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="5-邮件模板"></a>
+<h1>5. 邮件模板<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#5-%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF" class="wiki-anchor">¶</a></h1>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=19"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="51-GE沟通建特刊"></a>
+<h2>5.1 GE沟通建特刊<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#51-GE%E6%B2%9F%E9%80%9A%E5%BB%BA%E7%89%B9%E5%88%8A" class="wiki-anchor">¶</a></h2>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-cea94fb1-show" onclick="$(&#39;#collapse-cea94fb1-show, #collapse-cea94fb1-hide&#39;).toggle(); $(&#39;#collapse-cea94fb1&#39;).fadeToggle(150);; return false;">5.1.1 邀请被拒，没有时间的，或者给出了详细原因</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-cea94fb1-hide" onclick="$(&#39;#collapse-cea94fb1-show, #collapse-cea94fb1-hide&#39;).toggle(); $(&#39;#collapse-cea94fb1&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.1 邀请被拒，没有时间的，或者给出了详细原因</a></p><div class="collapsed-text" id="collapse-cea94fb1" style="display:none;"><blockquote>
+
+	<p>Thank you very much for your reply. We are sorry to hear that you are currently unable to accept the role of guest editor. <br>In addition, we appreciate your help to recommend young researchers in this area, including post-docs in your team or Department to join us. We believe Mathematics Journal will be a great platform to present their potential and develop their research career.<br>Thanks again for your attention and wish everything is going well for you.</p>
+
+
+</blockquote>
+
+<blockquote>
+
+	<p>Thank you very much for your reply. We regret that you will not be able to take on this task. We totally understand that senior scientists like you are always busy. We hope that we will have future collaborative opportunities with you. If you have any questions, comments, or are able to recommend a potential Guest Editor for this Special Issue, please do not hesitate to contact us.<br>In addition, I would like to take this opportunity to invite you to join the editorial board of Mathematics. Please feel free to contact us if you are interested in our proposal. Thank you!</p>
+
+
+</blockquote>
+
+<blockquote>
+
+	<p>We fully understand that you may have limited time in the upcoming months. We will contact you later on in the year, when you may have more availability in your schedule. We hope that this is okay with you.</p>
+
+
+</blockquote>
+
+<blockquote>
+
+	<p>We fully understand that you have limited time in the upcoming months, and we could extend the submission deadline if you needed more time. Typically, we would set the deadline of a Special Issue 10–12 months after the website is established. The first 3–6 months would be covered by promotion and a call for papers. Most submissions will come around the deadline, and we will take care of most of the editorial work (looking for reviewers, collecting review reports, communicating with the authors, etc.) which normally takes 2–3 months. Most of your work will only come after that. Please feel free to let us know if such a timeframe is fine with you if you decide to reconsider our invitation. In any case, we thank you again for your kind and prompt reply.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-c647e82c-show" onclick="$(&#39;#collapse-c647e82c-show, #collapse-c647e82c-hide&#39;).toggle(); $(&#39;#collapse-c647e82c&#39;).fadeToggle(150);; return false;">5.1.2 如果GE说自己没时间，推荐自己的Postdoc时，可以建议他自己作为Honorary GE</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-c647e82c-hide" onclick="$(&#39;#collapse-c647e82c-show, #collapse-c647e82c-hide&#39;).toggle(); $(&#39;#collapse-c647e82c&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.2 如果GE说自己没时间，推荐自己的Postdoc时，可以建议他自己作为Honorary GE</a></p><div class="collapsed-text" id="collapse-c647e82c" style="display:none;"><blockquote>
+
+	<p>Thank you very much for your reply and kind recommendation scholars.<br>We appreciate your recommendation and we know Dr. POSTDOC did a great job in this research area, but he may not have too much experience in the editing work. How about you join us as co-Guest Editor to provide guidance, and Dr. POSTDOC acts as the primary Guest Editor to make decisions and communicate with us?</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-14e295cb-show" onclick="$(&#39;#collapse-14e295cb-show, #collapse-14e295cb-hide&#39;).toggle(); $(&#39;#collapse-14e295cb&#39;).fadeToggle(150);; return false;">5.1.3 GE拒绝：不支持APC或没有Funding</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-14e295cb-hide" onclick="$(&#39;#collapse-14e295cb-show, #collapse-14e295cb-hide&#39;).toggle(); $(&#39;#collapse-14e295cb&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.3 GE拒绝：不支持APC或没有Funding</a></p><div class="collapsed-text" id="collapse-14e295cb" style="display:none;"><blockquote>
+
+	<p>Thanks for your consideration and feedback.</p>
+
+
+	<p>If I understand correctly, I assume you may be worried about the Article Processing Charges for the authors. I would like to provide the following points for your reconsideration.</p>
+
+
+	<p>As a publisher, we always intend to help researchers to publish their research results on our platform. While as an Open Access journal, we do not charge the subscribers and have no other income.</p>
+
+
+	<p>Mathematics as an Open Access journal, would like to publish high-quality papers to increase its influence. We also understand if we want to have the articles from leading scientists, we will have to give them a full fee waiver. It doesn't go well with established scientists that we invite them to contribute and then ask for a publication fee. So, we are happy with that in some cases.</p>
+
+
+	<p>You published with us before and your work brings us good citations to our journal. We hope we can cooperate with you again to attract more outstanding authors.</p>
+
+
+	<p>For this Special Issue, we may take it as an exception as long as there are good and enough publications. Do you have a potential author list in mind? Besides, our editorial office will help to do the promotion like send out the "call for paper" invitations.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-0041c11e-show" onclick="$(&#39;#collapse-0041c11e-show, #collapse-0041c11e-hide&#39;).toggle(); $(&#39;#collapse-0041c11e&#39;).fadeToggle(150);; return false;">5.1.4 GE询问发表量要求</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-0041c11e-hide" onclick="$(&#39;#collapse-0041c11e-show, #collapse-0041c11e-hide&#39;).toggle(); $(&#39;#collapse-0041c11e&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.4 GE询问发表量要求</a></p><div class="collapsed-text" id="collapse-0041c11e" style="display:none;"><blockquote>
+
+	<p>Thank you very much for your reply.</p>
+
+
+	<p>We don't have a requirement on the number of published papers for each Special Issue. Ideally, we expect to publish at least 10 papers so that we can make a Special Issue book and send a hard copy to each Guest Editor after its close. Regarding paper invitations, we always move in two ways:</p>
+
+
+	<p>- 1. Feature Paper invitations from the Guest Editor: You are encouraged to draft a potential author list and nominate some Feature Papers. We gladly provide discounts on papers by your colleague or other influential researchers.</p>
+
+
+	<p>- 2. Call-for-Paper invitation from the Journal Editorial Office: We will prepare a list of possible contributors and ask you to check. Later, we will send invitations to these possible contributors.</p>
+
+
+	<p>If everything above is fine with you, could you please take some time to prepare the special issue introduction and send it back to me?</p>
+
+
+	<p>If you need any assistance, please feel free to let me know. I am looking forward to hearing from you.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-2e4e6814-show" onclick="$(&#39;#collapse-2e4e6814-show, #collapse-2e4e6814-hide&#39;).toggle(); $(&#39;#collapse-2e4e6814&#39;).fadeToggle(150);; return false;">5.1.5 GE同意，问Summary和co-GE信息</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-2e4e6814-hide" onclick="$(&#39;#collapse-2e4e6814-show, #collapse-2e4e6814-hide&#39;).toggle(); $(&#39;#collapse-2e4e6814&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.5 GE同意，问Summary和co-GE信息</a></p><div class="collapsed-text" id="collapse-2e4e6814" style="display:none;"><p>*Note: *先找GE的合作者，如果有非一区的就别问co-GE了，免得推荐了咱们也不能用</p>
+
+
+<blockquote>
+
+	<p><strong>Subject: [Mathematics] Special Issue: xxx – Summary Needed</strong></p>
+
+
+	<p>Thank you very much for your consideration. We are glad to hear that you are willing to serve as the Guest Editor of this Special Issue.</p>
+
+
+	<p>Please find the attached template and fill in the information. Please prepare the information of the Guest Editors, Special Issue title, a short summary (about 200 words), and keywords (3-5) to be announced on the website. You can find an example at:<br><a class="external" href="https://www.mdpi.com/si/mathematics/Matrix_Structures_Numerical_Methods_Applications">https://www.mdpi.com/si/mathematics/Matrix_Structures_Numerical_Methods_Applications</a></p>
+
+
+	<p>We also kindly ask you to list 3 or more planned papers if possible. The planned papers refer to the manuscripts that will be probably submitted to this Special Issue. They might be written by your colleagues, yourself, or other scholars.</p>
+
+
+	<p>In addition, you could invite one or two colleagues as co-Guest Editors. It would be helpful to share the workload among editors and also enable an internal discussion in case any uncertainties arise.</p>
+
+
+	<p>We would appreciate it if you could complete the summary in the next few weeks. If you need more time, please let me know. Thank you very much in advance for the input.</p>
+
+
+</blockquote>
+
+	<p><strong>来自公司的GE需要有学术机构的co-GE</strong></p>
+
+
+<blockquote>
+
+	<p>Thank you again for agreeing to lead the Special Issue.</p>
+
+
+	<p>The next stage is to prepare a summary to introduce the issue for the webpage. Please could you provide us with a short introduction (200-300 words) that defines the aim and scope of the issue, and a few keywords (3-5 keywords).</p>
+
+
+	<p>I have attached a template below and you can find some examples here:<br><a class="external" href="https://www.mdpi.com/si/mathematics/Matrix_Structures_Numerical_Methods_Applications">https://www.mdpi.com/si/mathematics/Matrix_Structures_Numerical_Methods_Applications</a></p>
+
+
+	<p>Furthermore, we would also like you to consider a co-editor to work alongside you on this project. We encourage working as a team as it can bring several benefits:<br>- Guest Editors can share the workload which can make the process less time consuming;<br>- Collaborations with other academics may help to expand the scope of the Special Issue and bring in new perspectives;<br>- Each editor brings their own research network which can help to expand the audience and pool of potential contributors;<br>- Scholars from different countries will bring in a global perspective on the topic and promote diversity</p>
+
+
+	<p>We would like to suggest inviting a scholar from a research institute or university to be a part of your team. This will help to broaden the audience and highlight the importance of collaborations between academia and industry. If you are unsure who to invite, we can also provide you with some suggestions from our Editorial Board.</p>
+
+
+	<p>We look forward to working with you on this Special Issue. If you have any questions or queries, please do not hesitate to contact us.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-2c3852c7-show" onclick="$(&#39;#collapse-2c3852c7-show, #collapse-2c3852c7-hide&#39;).toggle(); $(&#39;#collapse-2c3852c7&#39;).fadeToggle(150);; return false;">5.1.6 Co-GE不合格</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-2c3852c7-hide" onclick="$(&#39;#collapse-2c3852c7-show, #collapse-2c3852c7-hide&#39;).toggle(); $(&#39;#collapse-2c3852c7&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.6 Co-GE不合格</a></p><div class="collapsed-text" id="collapse-2c3852c7" style="display:none;"><p><strong>Co-GE不符合要求原因：都来自亚洲</strong></p>
+
+
+<blockquote>
+
+	<p>Thank you very much for your recommendation. After consulting with the publisher, we are not able to invite Dr. XXXX as co-Guest Editor. As you know, the Guest Editor of a Special Issue is a key role, and can attract submitting authors from related regions. This journal is international, but the recommended Guest Editors are all from Asia. If possible, we hope to have more editors from western countries in order to show the international standing of this journal. If not, we hope you could lead the Special Issue by yourself.</p>
+
+
+</blockquote>
+
+	<p><strong>Co-GE不符合要求原因：不活跃或投稿记录不好</strong></p>
+
+
+<blockquote>
+
+	<p>After looking through the activity and publication history of Dr. XXX at MDPI, we have some concerns about your suggestion of appointing him as the co-guest editor of this issue. As he hardly accepts our review invitations [most of his submissions were rejected], we will not be able to invite Dr. XXX as a co-Guest Editor this time. I hope you could understand.</p>
+
+
+</blockquote>
+
+	<p><strong>Co-GE不符合要求原因：学术水平不够</strong></p>
+
+
+<blockquote>
+
+	<p>We have reviewed your proposal and unfortunately, we have some concerns about your suggestion of appointing Mr. XXX as the co-Guest Editor of this issue. As he has not been active in the field for a number of years [he is only a PhD student], we feel he may not have the expertise necessary to take on this role.</p>
+
+
+</blockquote>
+
+	<p><strong>Co-GE不符合要求原因：不提供理由</strong></p>
+
+
+<blockquote>
+
+	<p>Unfortunately, the application of Dr. XXXX for the role of co-Guest Editor has not been approved by our publisher after evaluating his work experience. If you have other colleagues to recommend, please let me know.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-072931ce-show" onclick="$(&#39;#collapse-072931ce-show, #collapse-072931ce-hide&#39;).toggle(); $(&#39;#collapse-072931ce&#39;).fadeToggle(150);; return false;">5.1.7 Summary Reminder</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-072931ce-hide" onclick="$(&#39;#collapse-072931ce-show, #collapse-072931ce-hide&#39;).toggle(); $(&#39;#collapse-072931ce&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.7 Summary Reminder</a></p><div class="collapsed-text" id="collapse-072931ce" style="display:none;"><p><strong>1st Reminder</strong></p>
+
+
+<blockquote>
+
+	<p>Just a gentle reminder about your introduction (about 200 words) and keywords (5–10 words) for this Special Issue. Ideally, we would like to make a preview website for the Special Issue first, so I'd therefore be grateful if you're able to send the short summary.</p>
+
+
+	<p>If you are busy recently, could you please let us know an estimated date? With this information in mind, we will avoid sending you unnecessary reminders.</p>
+
+
+</blockquote>
+
+	<p><strong>2nd Reminder</strong></p>
+
+
+<blockquote>
+
+	<p>I hope this message finds you well. I am following up on my previous message regarding the summary for your Special Issue. In order to announce the Special Issue, we hope to receive your summary soon. Of course, if you have any problems or have any questions, please feel free to let me know, and I'd be pleased to provide any assistance. Thanks for your help.</p>
+
+
+	<p>If you are in the process of looking for more planned papers, please just provide the planned papers you have so far. After the announcement of the Special Issue, the editorial office will also join you to attract submissions to this Special Issue.</p>
+
+
+	<p>We appreciate it if you send us a confirmation of receipt for this message.</p>
+
+
+</blockquote>
+
+	<p><strong>3rd Reminder</strong></p>
+
+
+<blockquote>
+
+	<p>I'm worried about you since I haven't heard from you for nearly three months. I hope everything is going well with you, and I'd like to ensure that you have indeed received my emails.</p>
+
+
+	<p>Some time ago, you expressed interest in being Guest Editor for this Special Issue. However, we have not heard from you since. I am writing to inquire whether you are still interested in setting up this Special Issue. We have a flexible deadline for this Special Issue that can be adjusted to accommodate your schedule.</p>
+
+
+	<p>Thank you for your attention. We look forward to hearing from you.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-678cd1ea-show" onclick="$(&#39;#collapse-678cd1ea-show, #collapse-678cd1ea-hide&#39;).toggle(); $(&#39;#collapse-678cd1ea&#39;).fadeToggle(150);; return false;">5.1.8 Summary Received &amp; Website Preview</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-678cd1ea-hide" onclick="$(&#39;#collapse-678cd1ea-show, #collapse-678cd1ea-hide&#39;).toggle(); $(&#39;#collapse-678cd1ea&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.8 Summary Received &amp; Website Preview</a></p><div class="collapsed-text" id="collapse-678cd1ea" style="display:none;"><blockquote>
+
+	<p>I'm glad to receive your reply and thank you very much for your information. The summary and confirmed papers list you provided are fine with us. We will send it to our English editor to polish the language, and set up the website. I will send the website link to you to check a couple of days later.</p>
+
+
+</blockquote>
+
+<blockquote>
+
+	<p>We are pleased to inform you that the preview version of your Special Issue website has been set up. Please check if everything is satisfactory for you:<br><a class="external" href="https://www.mdpi.com/xxxxxx">https://www.mdpi.com/xxxxxx</a></p>
+
+
+	<p>If everything is fine, you could send the link to your colleagues or connections to attract their attention. We hope you could provide 8 or more planned papers so that this Special Issue will be officially announced on the journal homepage. If this is too challenging for you, we encourage you to provide a list of potential authors whom you would like to invite as feature papers. We may provide discounts to papers invited by you.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-81b9c050-show" onclick="$(&#39;#collapse-81b9c050-show, #collapse-81b9c050-hide&#39;).toggle(); $(&#39;#collapse-81b9c050&#39;).fadeToggle(150);; return false;">5.1.9 让GE提供Planned Papers (附策略说明和PPT详解)</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-81b9c050-hide" onclick="$(&#39;#collapse-81b9c050-show, #collapse-81b9c050-hide&#39;).toggle(); $(&#39;#collapse-81b9c050&#39;).fadeToggle(150);; return false;" style="display:none;">5.1.9 让GE提供Planned Papers (附策略说明和PPT详解)</a></p><div class="collapsed-text" id="collapse-81b9c050" style="display:none;"><p>建议参考PPT文件: <a class="external" href="https://redmine.mdpi.cn/dmsf/files/41962/view">https://redmine.mdpi.cn/dmsf/files/41962/view</a></p>
+
+
+	<p style="padding-left:2em;"><strong>a. 普通说明，无策略</strong></p>
+
+
+<blockquote>
+
+	<p>Hope this email finds you well. I'm writing to ask if you get any planned papers.</p>
+
+
+	<p>This topic is interesting, and we have the confidence to make it a success. If possible, we hope to receive 8 planned papers or a potential author list in order to officially announce this Special Issue. After the announcement of the Special Issue, the editorial office will promote it and send “call for paper” invitations to more potential authors.</p>
+
+
+	<p>Thank you in advance for your contribution. We look forward to hearing from you.</p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><strong>b. Reciprocity 互惠原则</strong></p>
+
+
+	<ul>
+	<li>Let the GE know that <span style="background:yellow;">we will also work a lot (e.g., CfP, LinkedIn)</span> to promote the Special Issue </li>
+		<li>GE will realize that not all works should be done by GE</li>
+	</ul>
+
+
+<blockquote>
+
+	<p>If everything is fine, you could send the preview website to your colleagues or connections to attract their attention. We hope you could provide eight or more planned papers before it goes online. We may <span style="background:yellow;">provide discounts on papers invited by you</span>. Moreover, we will <span style="background:yellow;">collect a mailing list and send out 400+ invitation emails for your Special Issue</span> after it’s online.</p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><strong>c. Social Identity 社会认同原理</strong></p>
+
+
+	<ul>
+	<li>An individual's behavior derives from perceived membership in a relevant social group</li>
+		<li>Let the GE know that many other GEs can successfully finish the tasks</li>
+	</ul>
+
+
+<blockquote>
+
+	<p><span style="background:yellow;">According to our experience from other Special Issues</span>, it is quite attractive if Guest Editors can personally send out some invitations at this stage. <span style="background:yellow;">Usually, most of Guest Editors get about 5-10 planned papers</span>—two or three are from their own research groups and others are from connections or other scholars. We encourage you to contact your colleagues and see how much positive feedback we may receive.</p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><strong>d. Concession Strategy 拒绝退让策略</strong></p>
+
+
+	<ul>
+	<li>Firstly, we only ask for PPs                         (At first, we raise a high demand)</li>
+		<li>Later, if it’s too hard for a GE, we make concessions </li>
+		<li>At last, a potential list is also acceptable     (Then, we lower the demand)</li>
+	</ul>
+
+
+<blockquote>
+
+	<p>We understand that you could provide only 3 PPs at this time. <span style="background:yellow;">Alternatively, could you prepare a potential author list? Making the list is much easier.</span> The scholars on the potential author list might be your colleagues, connections, or scholars that you found in references, Google Scholar, or Web of Science. Let’s invite these scholars for submission after the launch of this Special Issue.</p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><strong>e. Spreading Good News 传递正能量</strong></p>
+
+
+	<ul>
+	<li>Both positive energy and negative energy are contagious</li>
+		<li>Do not mention PPs or author list in every email—it makes people feel bad</li>
+		<li>Only share good news (e.g., CiteScore, IF, paper accepted) is also a way to remind GEs</li>
+		<li>简单来说，不要发给GE的每封邮件都是提醒他交pp</li>
+	</ul>
+
+
+	<p style="padding-left:2em;"><strong>f. Hunger Marketing 短缺效应</strong></p>
+
+
+	<ul>
+	<li>Create comparative circumstances 创造一个比较环境（类似Early-bird discount）</li>
+	</ul>
+
+
+<blockquote>
+
+	<p>Glad to contact you again. May I ask about your progress on the planned papers? It would be great if we've received some planned papers for this Special Issue. If the Special Issue is set up by <span style="background:yellow;">October, three vouchers with 100</span> discounts% and several with 20% and 50% discounts will be offered to you. While if it is set up after <span style="background:yellow;">October, one voucher with 100</span> discount% and several with 20% or 50% discounts will be offered to you.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=20"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="52-GE沟通维护特刊"></a>
+<h2>5.2 GE沟通维护特刊<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#52-GE%E6%B2%9F%E9%80%9A%E7%BB%B4%E6%8A%A4%E7%89%B9%E5%88%8A" class="wiki-anchor">¶</a></h2>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-7d1b0913-show" onclick="$(&#39;#collapse-7d1b0913-show, #collapse-7d1b0913-hide&#39;).toggle(); $(&#39;#collapse-7d1b0913&#39;).fadeToggle(150);; return false;">5.2.1 免费或折扣</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-7d1b0913-hide" onclick="$(&#39;#collapse-7d1b0913-show, #collapse-7d1b0913-hide&#39;).toggle(); $(&#39;#collapse-7d1b0913&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.1 免费或折扣</a></p><div class="collapsed-text" id="collapse-7d1b0913" style="display:none;"><p><strong>GE询问折扣或免费</strong> （根据实际情况回复）</p>
+
+
+<blockquote>
+
+	<p>It is fine with us to provide discounts to your colleagues or scholars invited by you. At the same time, please note that the discounts are generally provided to high-quality papers or influential scholars. <br>Would it be convenient for you to send me the information (tentative title, abstract, and authorship) of the papers? We will evaluate the planned papers and inform you how much discount we could provide for each paper. The discount may vary from 0% to 100%. If the authors agree with our discounts, they will become valid. Otherwise, the authors could contribute their papers elsewhere. We promise not to disclose any information to others without your permission. <br>Thank you for your understanding and consideration. Looking forward to receiving the information.</p>
+
+
+</blockquote>
+
+	<p><strong>GE询问折扣或免费 (version 2)</strong></p>
+
+
+<blockquote>
+
+	<p>If you would like to provide a discount to a scholar, please send us the tentative article title and authorship. Then, the editorial office will inform you how much discount could be provided for each article at maximum. Sometimes, we could provide a full waiver to a scholar, but sometimes we are unable to provide a discount. In addition, some sponsorships are targeted at certain institutes/countries, so the discounts might also vary according to the university/country. Usually, we might be more generous to European and North American scholars. If the authors disagree with the discount, they could submit their papers to other journals.</p>
+
+
+</blockquote>
+
+	<p><strong>只能提供小额折扣</strong></p>
+
+
+<blockquote>
+
+	<p>Thank you for your information. We are glad to know that Dr. XXXX is interested in submitting a paper to this Special Issue, however, we could only provide a 20% discount to him/her.</p>
+
+
+	<p>Please understand that the discounts are provided to high-quality papers by influential scholars, so the vouchers couldn't be distributed freely. We hope he/she could find enough funding to support the rest of the charges.</p>
+
+
+</blockquote>
+
+	<p><strong>拒绝提供任何折扣</strong></p>
+
+
+<blockquote>
+
+	<p>Thank you very much for your email. We are pleased to know that your colleague Dr. XXXX is interested in this Special Issue.</p>
+
+
+	<p>However, we are unable to provide a discount at the moment. Please understand that the discounts are generally provided to high-quality papers by influential authors, and the publisher and sponsors are responsible for the evaluation of discounts. Unfortunately, we are unable to provide a discount to Dr. XXXX. Nevertheless, we encourage you to invite other colleagues in the future.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-a49b42ad-show" onclick="$(&#39;#collapse-a49b42ad-show, #collapse-a49b42ad-hide&#39;).toggle(); $(&#39;#collapse-a49b42ad&#39;).fadeToggle(150);; return false;">5.2.2 特刊上线通知</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-a49b42ad-hide" onclick="$(&#39;#collapse-a49b42ad-show, #collapse-a49b42ad-hide&#39;).toggle(); $(&#39;#collapse-a49b42ad&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.2 特刊上线通知</a></p><div class="collapsed-text" id="collapse-a49b42ad" style="display:none;"><blockquote>
+
+	<p><strong>Subject: [Mathematics] Special Issue: xxx – Website Online</strong></p>
+
+
+	<p>The Special Issue website is available at the following link, please check it and let me know if any modifications are required.</p>
+
+
+	<p><a class="external" href="http://www.mdpi.com/journal/xxx/special_issues/xxx">http://www.mdpi.com/journal/xxx/special_issues/xxx</a></p>
+
+
+	<p>We've checked the potential author list and hope you could start to send some "Call for paper" invitations to the scholars on the attached list. The Editorial Office will send invitations to the other scholars on your previous list. For your reference, I attached an Email Template.</p>
+
+
+	<p>(针对已经提供了8个pp的，把上一段话换成I will organize invitations of “call for papers” in the next a few days.)</p>
+
+
+	<p>Besides, I prepared some materials to help you promote the Special Issue:<br>1. Banner: you may upload it to your social media, such as Twitter (and @Mathematics_MDPI) and LinkedIn (and #Mathematics MDPI). We also encourage you to add the Special Issue as a project to your institute homepage or ResearchGate homepage.<br>2. Flyer: you may bring some flyers to conferences with you. The flyers could be left on a table at the poster session for those interested, or you can distribute some directly to the scholars you know.</p>
+
+
+	<p>Let's hope that we will make this special issue a great success!</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-57ea722d-show" onclick="$(&#39;#collapse-57ea722d-show, #collapse-57ea722d-hide&#39;).toggle(); $(&#39;#collapse-57ea722d&#39;).fadeToggle(150);; return false;">5.2.3 CfP List Approval</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-57ea722d-hide" onclick="$(&#39;#collapse-57ea722d-show, #collapse-57ea722d-hide&#39;).toggle(); $(&#39;#collapse-57ea722d&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.3 CfP List Approval</a></p><div class="collapsed-text" id="collapse-57ea722d" style="display:none;"><p><strong>这个list不需要仔细筛</strong>，只需purge后将第二页近期联系过的蓝色绿色的或者第三页的EU not DB发给GE，问他是否可以。如果GE说可以，接着再问下他是否可以从中挑一部分人来邀请。（CfP办公室发第一页和第二页橙色的）</p>
+
+
+<blockquote>
+
+	<p>Glad to contact you again.</p>
+
+
+	<p>To collect enough papers in this Special Issue, we plan to send “Call for Papers” to more potential authors. We have collected a mailing list from our database, and the papers are published in the last five years. Could you tell us if the list attached can be used to send regular calls for papers?</p>
+
+
+	<p>Thank you for your support and looking forward to hearing from you again.</p>
+
+
+</blockquote>
+
+	<p><strong>GE同意后，尽快做list送CfP Team，请GE帮忙发邀请</strong></p>
+
+
+<blockquote>
+
+	<p>Thanks for your reply. From our previous experience, a personal invitation from the Guest Editor is far more effective than a general invitation from the Editorial Office. If you could choose suitable authors from the list and contact them about submissions, it would be incredibly helpful. I will prepare an invitation template, along with instructions on how to use Mail Merge to send bulk emails, so it will take a little time.</p>
+
+
+	<p>I look forward to hearing from you.</p>
+
+
+</blockquote>
+
+	<p><strong>GE同意帮忙发邀请</strong>：请下载 <a href="https://redmine.mdpi.cn/attachments/download/6180980/Mail%20Merge.pdf" class="attachment">Mail Merge.pdf</a> 这个文件，作为附件发给GE</p>
+
+
+<blockquote>
+
+	<p>Thank you very much for your positive responses. Attached is the guideline on "How to use Mail Merge to send a group mails", you can download and install "Thunderbird", apply for an account, then use the function "Mail Merge" to send bulk emails.</p>
+
+
+	<p>In addition, when calling for papers, could you send copies to me (cc <a class="email" href="mailto:XXX@mdpi.com">XXX@mdpi.com</a>) and /Mathematics/ Editorial Office (cc <a class="email" href="mailto:mathematics@mdpi.com">mathematics@mdpi.com</a>) so that the emails will be more convincible? Attached please find the papers invitation template. You may modify the letter as you wish.</p>
+
+
+	<p>Thank you in advance for your great efforts!</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-67117dcb-show" onclick="$(&#39;#collapse-67117dcb-show, #collapse-67117dcb-hide&#39;).toggle(); $(&#39;#collapse-67117dcb&#39;).fadeToggle(150);; return false;">5.2.4 发送月报</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-67117dcb-hide" onclick="$(&#39;#collapse-67117dcb-show, #collapse-67117dcb-hide&#39;).toggle(); $(&#39;#collapse-67117dcb&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.4 发送月报</a></p><div class="collapsed-text" id="collapse-67117dcb" style="display:none;"><blockquote>
+
+	<p><strong>Subject: [Mathematics] Monthly Report (xxx 2021) – Special Issue: xxxx</strong></p>
+
+
+	<p>I am writing to report the status of your Special Issue "XXX".<br><a class="external" href="https://www.mdpi.com/journal/mathematics/special_issues/xxxx">https://www.mdpi.com/journal/mathematics/special_issues/xxxx</a></p>
+
+
+	<p>1. Status of submissions:</p>
+
+
+	<p>Published: 6; Under Processing: 3; Rejected: 6</p>
+
+
+	<p>As guest editor, you are able to check all manuscripts of your special issue online. You could log in with your email at <a class="external" href="https://susy.mdpi.com/external-editor/special_issues">https://susy.mdpi.com/external-editor/special_issues</a> and check all manuscripts.</p>
+
+
+	<p>2. Status of feature papers (with discount):</p>
+
+
+	<p>There are xxx authors who have agreed to contribute feature papers to the Special Issue.</p>
+
+
+	<p>(1) <a class="email" href="mailto:xxx@xx.es">xxx@xx.es</a> (xx% off)<br>(2) <a class="email" href="mailto:xxx@xx.es">xxx@xx.es</a> (xx% off)</p>
+
+
+	<p>To increase the impact of this Special Issue, would you kindly invite some additional potential authors? The submission deadline is xxx, and we want to ensure that the authors have enough time to prepare good papers. We are hoping to confirm the papers to be featured in this Special Issue as soon as possible. Do any potential authors come to your mind?</p>
+
+
+	<p><strong>(可选a)</strong> 3. Promotion of the Special Issue</p>
+
+
+	<p>This special issue is now promoted on LinkedIn:<br><a class="external" href="https://www.linkedin.com/xxx">https://www.linkedin.com/xxx</a></p>
+
+
+	<p>If you have a LinkedIn account, you might be willing to share it on your LinkedIn.</p>
+
+
+	<p><strong>(可选b)</strong> 3. CfP Sent</p>
+
+
+	<p>The Editorial Office has finished sending the 'call for paper' (CfP) invitations to all the potential authors on the mailing list, but we have not received a positive response yet. We will send a reminder a few months later.</p>
+
+
+	<p>Please do not hesitate to contact us if you have any further questions or if you have any suggestions to promote the Special Issue. We look forward to hearing from you.</p>
+
+
+	<p><strong>(可选c)</strong> 3. Manuscript Submission Invitations</p>
+
+
+	<p>According to our experience from other Special Issues, it is more attractive if the guest editor can send out invitations personally. Would you be able to provide a list of 20–30 potential authors (name and email/affiliation) for which you would send a feature paper invitation, i.e., for publication with discounts? We recommend that the list includes authors who you expect to submit high-quality articles that would greatly strengthen the Special Issue. As the Editorial Office is responsible for administering the discount, we would like to confirm the invitees before you send the invitations.</p>
+
+
+	<p>If you are unable to provide the list, would you mind sending invitations to scholars on our list? We could also prepare a mailing list and email template that you can send out.</p>
+
+
+	<p><strong>(可选d)</strong> 3. Editor Certificate</p>
+
+
+	<p>On behalf of the Editor-in-Chief, we would like to thank you for your editorial work, and we are glad to issue you the editor certificate (see attached).</p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><img src="./SI_files/img0005.png" alt=""></p></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-171e4de6-show" onclick="$(&#39;#collapse-171e4de6-show, #collapse-171e4de6-hide&#39;).toggle(); $(&#39;#collapse-171e4de6&#39;).fadeToggle(150);; return false;">5.2.5 询问GE参会</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-171e4de6-hide" onclick="$(&#39;#collapse-171e4de6-show, #collapse-171e4de6-hide&#39;).toggle(); $(&#39;#collapse-171e4de6&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.5 询问GE参会</a></p><div class="collapsed-text" id="collapse-171e4de6" style="display:none;"><blockquote>
+
+	<p><strong>Subject [Mathematics] Promote the Special Issue at Conferences You Will Attend</strong><br>Dear Professor XXX,</p>
+
+
+	<p>Thank you very much for your efforts in promoting this Special Issue. To further increase the visibility and to support your promotion of this Special Issue, we would like to know if you plan to attend or organize any relevant conferences or workshops in the next few months or next year. If yes, we can offer you a travel grant to support attendance at these events. We would appreciate your help in promoting our journal in the following ways:</p>
+
+
+	<p>- Adding 1–2 slides about this Special Issue in your presentation;<br>- Attracting five or more planned papers through these conferences or from your colleagues/friends/related scholars;<br>- Distributing flyers for the journal or your Special Issues;<br>- Promoting the special issue during the conference via social media, such as LinkedIn and Twitter.</p>
+
+
+	<p>Of course, we would be very happy to supply you with promotional materials in advance. If you have any interest in this proposal, could you send me the conference information (including an approximate number of participants) in advance? We will send this application to our publisher and get back to you.</p>
+
+
+</blockquote>
+
+	<ul>
+	<li>GE发来信息之后，我们先自己check下会议基本信息 （title，topic是否与特刊相关；会议时间地点；预计参会人数），不确定的信息可以让GE补充一下。</li>
+		<li>回信告知GE我们会尽快回复。</li>
+		<li>找ME和我们期刊的管理市场的同事（Helene Hu）确定会议可行性 （上述会议信息，GE的邮箱，活跃度，特刊名，这个特刊现在的PP数量）</li>
+		<li>通过之后跟GE回信分两种情况
+	<ul>
+	<li>GE如果发来会议和五篇文章的list，我们就可以找publisher申请travel grant。后面记得follow这些PP，follow GE参会有没有给宣传。</li>
+		<li>如果GE参加的是线上会议，问下ME，可以考虑提供300 CHF，cover 注册费。同时可以问下GE，能否在presentation里加两页特刊的PPT，跟会议做成free media，建会议特刊。</li>
+	</ul></li>
+	</ul>
+
+
+	<p>---------------------------<br><strong>会议检查信息模板</strong><br>GE Name: Cristina Muresan &lt;<a class="email" href="mailto:cristina.muresan@aut.utcluj.ro">cristina.muresan@aut.utcluj.ro</a>&gt;<br>Conference Name: International Conference on System Theory and Control<br>Date &amp; Location: 20–23 October 2021, Iași, Romania<br>Conference website: <a class="external" href="https://icstcc2021.ac.tuiasi.ro/">https://icstcc2021.ac.tuiasi.ro</a><br>Other information: GE活跃度，特刊Deadline是否晚于会议日期；参会人数等<br>---------------------------</p>
+
+
+	<p style="padding-left:2em;"> <strong>a. 通过了批准,找GE要银行账号，最好不要直接说金额</strong></p>
+
+
+<blockquote>
+
+	<p>Dear XXX,</p>
+
+
+	<p>We have checked the XXX conference as well as your Special Issue. The main topics of this conference are a good match with the scope of this Special Issue. We are grateful for your willingness to promote this Special Issue at this event and would like to provide you with a travel grant to support your attendance. Could you send me the following bank information, then I will arrange the bank transfer?</p>
+
+
+	<ul>
+	<li>Payment recipient name </li>
+		<li>Address </li>
+		<li>City </li>
+		<li>Zipcode </li>
+		<li>Country </li>
+		<li>Payment Bank Name </li>
+		<li>IBAN / Account Number </li>
+		<li>BIC / SWIFT</li>
+	</ul>
+
+
+	<p>We appreciate your help in promoting the Special Issue in the following ways:</p>
+
+
+	<p>(1) Add one or two slides about this Special Issue in your presentation (see attached for reference)<br>(2) Distribute flyers during the conference (please provide your <strong>Shipping Address</strong> so that we will send you the materials) [实体会议才需要这一条]<br>(3) We would greatly appreciate it if you promote the Special Issue with other approaches, such as social media or mentioning the Special Issue on the "paper publication" page of the conference webpage.</p>
+
+
+	<p>I look forward to hearing from you soon.</p>
+
+
+	<p>附件: <a href="https://redmine.mdpi.cn/attachments/download/6171154/Slide%20for%20IFSA-EUSFLAT%202021-Mathematics.pptx" class="attachment">Slide for IFSA-EUSFLAT 2021-Mathematics.pptx</a></p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><strong>b. GE 发来了银行卡信息</strong></p>
+
+
+<blockquote>
+
+	<p>Thank you for your information. I have forwarded your details to our financial colleague, and it may take up to a few weeks for the bank transfer. Please kindly let me know if you have not received it by then.</p>
+
+
+	<p>By the way, I have prepared two slides with details of this Special Issue, which you might include in your presentation at the conference. We would also be very happy to supply you with promotional materials in advance.</p>
+
+
+</blockquote>
+
+	<p>---------------------------<br><strong>找Helene Hu Skype告知申请travel grant的信息模板</strong></p>
+
+
+	<p>申请信息+金额+模式（到场展示+分发flyer；到场只做展示or只分发flyer；线上展示）GE打印flyer还是我们来邮寄 (邮寄多少份）</p>
+
+
+	<p>GE Name: Cristina Muresan &lt;<a class="email" href="mailto:cristina.muresan@aut.utcluj.ro">cristina.muresan@aut.utcluj.ro</a>&gt;<br>Conference Name: International Conference on System Theory and Control<br>Date &amp; Location: 20–23 October 2021, Iași, Romania<br>website: <a class="external" href="https://icstcc2021.ac.tuiasi.ro/">https://icstcc2021.ac.tuiasi.ro</a></p>
+
+
+	<p>Payment recipient name:  <br>Address:  <br>City:  <br>Zipcode:  <br>Country:  <br>Payment Bank Name:  <br>IBAN / Account Number: <br>BIC / SWIFT: <br>---------------------------</p>
+
+
+	<p style="padding-left:2em;"><strong>c. 打印Flyers并邮寄给GE</strong>：这部分请找我们期刊的管理市场的同事（Helene Hu）完成。</p>
+
+
+	<p>---------------------------<br><strong>申请flyer打印和邮寄的信息模板</strong><br>给下GE的地址，反馈GE我们预计在会议开始前2个月处理打印及邮寄，请SIE自己把握时间，到节点把需要打印的资料和邮寄flyer的信息给我：<br>Recipient Name: Muresan  <br>Recipient City/Country:  <br>Recipient Address:  <br>Phone Number: <br>---------------------------</p>
+
+
+	<p style="padding-left:2em;"><strong>d. 会议结束之后，在平时汇报特刊状态的时候，一起问下或者单独给GE发下邮件咨询反馈：</strong></p>
+
+
+<blockquote>
+
+	<p>参考1：In addition, I would like to know if you met anyone who may have an interest in this Special Issue? If yes, could you send me the names and emails list, then I can guide them about our submission procedure? If there is any feedback or any suggestions for us to improve our work, please feel free to let me know.</p>
+
+
+</blockquote>
+
+	<p><span style="color:red;">所有申请了travel grant的都需要有反馈，否则会影响期刊后续的所有申请</span></p>
+
+
+	<p style="padding-left:2em;"><strong>x. 未通过批准</strong></p>
+
+
+<blockquote>
+
+	<p>Thank you very much for your information. However, the topic of this conference is not within the scope of this Special Issue. We worry it would be difficult for you to promote it at this conference. We would like to know if you plan to attend other conferences this year or in 2021?</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-892cf9d0-show" onclick="$(&#39;#collapse-892cf9d0-show, #collapse-892cf9d0-hide&#39;).toggle(); $(&#39;#collapse-892cf9d0&#39;).fadeToggle(150);; return false;">5.2.6 特刊延期</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-892cf9d0-hide" onclick="$(&#39;#collapse-892cf9d0-show, #collapse-892cf9d0-hide&#39;).toggle(); $(&#39;#collapse-892cf9d0&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.6 特刊延期</a></p><div class="collapsed-text" id="collapse-892cf9d0" style="display:none;"><p style="padding-left:2em;"><strong>a. 发文不够6篇</strong></p>
+
+
+<blockquote>
+
+	<p><strong>Subject: [Mathematics] Special Issue: xxx – Submission Deadline Extension</strong></p>
+
+
+	<p>Hope this mail finds you well.</p>
+
+
+	<p>The submission deadline for your special issue "XXX" is coming. As currently only XX papers have been published, we suggest extending the deadline to XX, and then we could organize another round of "Call-for-Papers" to collect more contributions. What do you think? We wish every special issue can publish more than 6 papers.</p>
+
+
+	<p>Special Issue Link</p>
+
+
+	<p>I look forward to your suggestions.</p>
+
+
+</blockquote>
+
+	<p style="padding-left:2em;"><strong>b. 还有PP没投上来</strong> (如果特刊已经发了8+篇文章就不用延期了，直接建议GE带着pp开新特刊)</p>
+
+
+<blockquote>
+
+	<p><strong>Subject: [Mathematics] Special Issue: xxx – Submission Deadline Extension</strong></p>
+
+
+	<p>We currently have xx planned papers/potential contributions that are still in preparation. Some authors need more time to complete the manuscripts and have asked for an extension. In this case, I suggest that we extend the submission deadline to DATE. This would allow those authors to have enough time to prepare the manuscripts; on the other hand, we could organize another round of "Call-for-Papers" to collect more submissions. What do you think about this?</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-e0a0a095-show" onclick="$(&#39;#collapse-e0a0a095-show, #collapse-e0a0a095-hide&#39;).toggle(); $(&#39;#collapse-e0a0a095&#39;).fadeToggle(150);; return false;">5.2.7 SI Closed Report，重开特刊，做书等</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-e0a0a095-hide" onclick="$(&#39;#collapse-e0a0a095-show, #collapse-e0a0a095-hide&#39;).toggle(); $(&#39;#collapse-e0a0a095&#39;).fadeToggle(150);; return false;" style="display:none;">5.2.7 SI Closed Report，重开特刊，做书等</a></p><div class="collapsed-text" id="collapse-e0a0a095" style="display:none;"><blockquote>
+
+	<p><strong>Subject: [Mathematics] All Papers Finalized in Your Special Issue: XXX</strong></p>
+
+
+	<p>We would like to thank you very much for having served as the guest editor of the Special Issue "XXX". With your great help, all papers have been finalized. <br>Link</p>
+
+
+	<p>1. Status of Submissions</p>
+
+
+	<p>Here we brief the status of your Special Issue as follow:</p>
+
+
+	<p>- Submission: (X); <br>- Publication: (X); <br>- Rejection: (X); <br>- Article Type: Article (X); Review (X);</p>
+
+
+</blockquote>
+
+<blockquote>
+
+	<p><strong>(可选a 重开特刊)</strong> 2. Continued Cooperation</p>
+
+
+	<p>Since the performance of this special issue is outstanding, I have a proposal on re-starting it. This Special Issue is quite remarkable and successful, and more and more authors and readers pay attention to your special issues. We also have many regular submissions in this research field recently. Therefore, it would be reasonable and promising for us to continue conducting this special issue in the following months.</p>
+
+
+	<p>I would like to know whether you are interested in editing this special issue again as guest editor? We can use the summary and keywords in previous special issue directly. Otherwise, please kindly inform us if you have any other nice topic to set up a new special issue.</p>
+
+
+</blockquote>
+
+<blockquote>
+
+	<p><strong>(可选b 做特刊书)</strong> 3. Special Issue Book <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#7-Special-Issue-Book" class="wiki-page">(做书详细流程见7.Special Issue Book)</a></p>
+
+
+	<p>We would like to invite you to publish an <strong>Editorial</strong> to summarize your special issue. You can take the following links as an example:</p>
+
+
+	<p><a class="external" href="https://www.mdpi.com/2227-7390/9/23/3009">https://www.mdpi.com/2227-7390/9/23/3009</a><br><a class="external" href="https://www.mdpi.com/2227-7390/10/3/448">https://www.mdpi.com/2227-7390/10/3/448</a></p>
+
+
+	<p>Please note that <strong>Editorial</strong> is free of charge and will be published without standard peer review. After the <strong>Editorial</strong> is published, we will reprint this special issue in a book form and promote it via social media and related international scientific conferences. You may find some examples of Special Issue Books in our online library:</p>
+
+
+	<p><a class="external" href="https://www.mdpi.com/books/search?type_books=bookReprint&amp;selectJournal=mathematics">https://www.mdpi.com/books/search?type_books=bookReprint&amp;selectJournal=mathematics</a></p>
+
+
+	<p>Special Issue Reprints are of course open access and will be indexed in the Directory of ISBN Books. Printed copies are available on demand and Guest Editors receive one free physical copy each.</p>
+
+
+	<p>After submitting the <strong>Editorial</strong>, please find attached the template and fill in the information about the book. Thank you in advance for your input.</p>
+
+
+	<p>附件: <a href="https://redmine.mdpi.cn/attachments/download/7303339/Special%20Issue%20Book.docx" class="attachment">Special Issue Book.docx</a></p>
+
+
+</blockquote></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=21"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="53-作者沟通"></a>
+<h2>5.3 作者沟通<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#53-%E4%BD%9C%E8%80%85%E6%B2%9F%E9%80%9A" class="wiki-anchor">¶</a></h2>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-f1562bdd-show" onclick="$(&#39;#collapse-f1562bdd-show, #collapse-f1562bdd-hide&#39;).toggle(); $(&#39;#collapse-f1562bdd&#39;).fadeToggle(150);; return false;">5.3.1 作者同意了CfP</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-f1562bdd-hide" onclick="$(&#39;#collapse-f1562bdd-show, #collapse-f1562bdd-hide&#39;).toggle(); $(&#39;#collapse-f1562bdd&#39;).fadeToggle(150);; return false;" style="display:none;">5.3.1 作者同意了CfP</a></p><div class="collapsed-text" id="collapse-f1562bdd" style="display:none;"><p>Note: 要摘要，题目，作者信息，然后添加到susy pp 里</p>
+
+
+<blockquote>
+
+	<p>Thank you very much for your email. We are pleased to know that you would like to submit a paper to the special issue "Title".</p>
+
+
+	<p>Could you kindly share the following information about your manuscript with us?</p>
+
+
+	<p>---------------------------------<br>Title: <br>Abstract:<br>Author:<br>Affiliation:<br>Submission Date:<br>---------------------------------</p>
+
+
+	<p>Do not hesitate to contact me if you have any further questions. I am looking forward to your feedback.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-7e177e81-show" onclick="$(&#39;#collapse-7e177e81-show, #collapse-7e177e81-hide&#39;).toggle(); $(&#39;#collapse-7e177e81&#39;).fadeToggle(150);; return false;">5.3.2 作者拒绝了CfP</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-7e177e81-hide" onclick="$(&#39;#collapse-7e177e81-show, #collapse-7e177e81-hide&#39;).toggle(); $(&#39;#collapse-7e177e81&#39;).fadeToggle(150);; return false;" style="display:none;">5.3.2 作者拒绝了CfP</a></p><div class="collapsed-text" id="collapse-7e177e81" style="display:none;"><blockquote>
+
+	<p>Thank you very much for your e-mail and the information. We are sorry to hear that you will be unable to contribute your manuscript this time. Meanwhile, if you know some scholars who might be interested in contributing papers to this special issue, please do not hesitate to pass this message on. Thank you very much.</p>
+
+
+	<p>We also hope we will have the opportunity to invite your excellent manuscripts to our journal in the future.</p>
+
+
+	<p>We wish you all the best for your research.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-80bd40ac-show" onclick="$(&#39;#collapse-80bd40ac-show, #collapse-80bd40ac-hide&#39;).toggle(); $(&#39;#collapse-80bd40ac&#39;).fadeToggle(150);; return false;">5.3.3 建议作者换特刊</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-80bd40ac-hide" onclick="$(&#39;#collapse-80bd40ac-show, #collapse-80bd40ac-hide&#39;).toggle(); $(&#39;#collapse-80bd40ac&#39;).fadeToggle(150);; return false;" style="display:none;">5.3.3 建议作者换特刊</a></p><div class="collapsed-text" id="collapse-80bd40ac" style="display:none;"><blockquote>
+
+	<p><strong>Subject: [Mathematics] mathematics-xxxxx – More Appropriate Special Issue</strong></p>
+
+
+	<p>I am writing to discuss with your manuscript mathematics-xxxxx, regarding the selection of the Special Issue.</p>
+
+
+	<p>You previously submitted your manuscript to the Special Issue "OLD SI NAME". Unfortunately, the Guest Editor thinks the paper doesn't fit the scope of the Special Issue well. After discussing, we think the paper may fits another Special Issue "NEW SI NAME": <br><a class="external" href="https://www.mdpi.com/si/mathematics/xxxxxx">https://www.mdpi.com/si/mathematics/xxxxxx</a></p>
+
+
+	<p>Therefore, I advise moving your manuscript into this new special issue for further processing. Do you agree?</p>
+
+
+	<p>Thank you in advance for your consideration. Looking forward to hearing from you.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-3de65a57-show" onclick="$(&#39;#collapse-3de65a57-show, #collapse-3de65a57-hide&#39;).toggle(); $(&#39;#collapse-3de65a57&#39;).fadeToggle(150);; return false;">5.3.4 告知作者没有折扣</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-3de65a57-hide" onclick="$(&#39;#collapse-3de65a57-show, #collapse-3de65a57-hide&#39;).toggle(); $(&#39;#collapse-3de65a57&#39;).fadeToggle(150);; return false;" style="display:none;">5.3.4 告知作者没有折扣</a></p><div class="collapsed-text" id="collapse-3de65a57" style="display:none;"><blockquote>
+
+	<p>Thank you very much for your email. We are pleased to know that you are interested in this special issue.</p>
+
+
+	<p>However, we don't provide a discount at the moment. We hope you could get enough funding to support your publication in this Special Issue.<br>We hope to have the opportunity to cooperate with you.</p>
+
+
+</blockquote></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=22"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="54-其他模板"></a>
+<h2>5.4 其他模板<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#54-%E5%85%B6%E4%BB%96%E6%A8%A1%E6%9D%BF" class="wiki-anchor">¶</a></h2>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-6c5997e0-show" onclick="$(&#39;#collapse-6c5997e0-show, #collapse-6c5997e0-hide&#39;).toggle(); $(&#39;#collapse-6c5997e0&#39;).fadeToggle(150);; return false;">[Susy] MDPI susy模板</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-6c5997e0-hide" onclick="$(&#39;#collapse-6c5997e0-show, #collapse-6c5997e0-hide&#39;).toggle(); $(&#39;#collapse-6c5997e0&#39;).fadeToggle(150);; return false;" style="display:none;">[Susy] MDPI susy模板</a></p><div class="collapsed-text" id="collapse-6c5997e0" style="display:none;"><p style="padding-left:2em;">{{dmsf(41963)}}</p></div><p></p>
+
+
+	<p><a class="collapsible collapsed" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-c8ae9eb0-show" onclick="$(&#39;#collapse-c8ae9eb0-show, #collapse-c8ae9eb0-hide&#39;).toggle(); $(&#39;#collapse-c8ae9eb0&#39;).fadeToggle(150);; return false;">更多模板：Follow Up同意的TE/EB建特刊、提醒第2-3次、提醒长时间不回复的GE等</a><a class="collapsible" href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#" id="collapse-c8ae9eb0-hide" onclick="$(&#39;#collapse-c8ae9eb0-show, #collapse-c8ae9eb0-hide&#39;).toggle(); $(&#39;#collapse-c8ae9eb0&#39;).fadeToggle(150);; return false;" style="display:none;">更多模板：Follow Up同意的TE/EB建特刊、提醒第2-3次、提醒长时间不回复的GE等</a></p><div class="collapsed-text" id="collapse-c8ae9eb0" style="display:none;"><p style="padding-left:2em;">请下载 <a href="https://redmine.mdpi.cn/attachments/download/10470766/SI%20Managing%20Template%20(Quicktext).zip" class="attachment">SI Managing Template (Quicktext).zip</a> 并导入Quicktext查看。</p></div><p></p>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=23"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="6-Call-for-Reading-CfR"></a>
+<h1>6. Call for Reading (CfR)<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#6-Call-for-Reading-CfR" class="wiki-anchor">¶</a></h1>
+
+
+	<p style="padding-left:2em;">特刊截刊后，为了宣传特刊及其发表的文章，鼓励特刊作者和审稿人阅读和传阅特刊文章，SIE需要使用 <acronym title="Call for Reading">CFR</acronym> 进行宣传。可以发送CfR的特刊需满足以下条件:</p>
+
+
+	<ul>
+	<li>特刊所有稿件已处理完毕</li>
+		<li>特刊发文大于等于5篇</li>
+		<li><span style="color:red;">每个符合要求的截刊特刊都需要从susy发CfR，且需要请GE帮忙发CfR，并将情况记录在Note上</span></li>
+	</ul>
+
+
+	<p></p><div style="float:right"><img src="./SI_files/img0006.jpg" style="width:600px;" alt=""></div><p></p>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=24"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="61-CfR-by-susy"></a>
+<h2>6.1 CfR by susy<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#61-CfR-by-susy" class="wiki-anchor">¶</a></h2>
+
+
+	<ol>
+	<li>如果截刊特刊满足上述CfP条件，则尽快发送CfR（系统对发送CfR的时间没有限制）</li>
+		<li>打开<a href="https://docs.google.com/spreadsheets/d/1hGbM9Fu6uUboPtedBzd--TxYqCtaPeDKKQF-SS9HjqE/edit#gid=1404084464" class="external">Google在线表格的twitter SI 推广栏</a> ，根据提示填写信息</li>
+		<li>几天后，期刊Twitter账号负责人会进行Twitter推广，并将Twitter链接填写在上述表格的"反馈"栏</li>
+		<li>按照 <span style="color:blue;">右图所示</span> ，在Susy输入宣传链接，点击"Send CfR"，CfR邮件将自动发送给该特刊所有的作者和审稿人</li>
+		<li>特刊编辑和期刊办公室均会收到一封CfR report邮件，其中包含了发送的作者和审稿人数量及信息</li>
+	</ol>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=25"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="62-CfR-by-GE"></a>
+<h2>6.2 CfR by GE<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#62-CfR-by-GE" class="wiki-anchor">¶</a></h2>
+
+
+	<ol>
+	<li>CfP/PA list: 把CfP以及让GE邀稿的所有list整合在一起并去重</li>
+		<li>删掉邀稿时回复不在领域的人，避免错误的打扰</li>
+		<li>CfR(susy) 是对作者和审稿人宣传，所以再让GE帮忙CfR的时候要删掉 <a href="https://admin.mdpi.com/tools/excelexports/callforreading" class="external">这些人</a></li>
+		<li>邮件模板请查看: <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/Email_Template_-_Ask_GE_to_send_CfRdocx?parent=SI_Manage_CN" class="wiki-page new">Email Template - Ask GE to send CfR.docx</a></li>
+	</ol>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=26"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="7-Special-Issue-Book"></a>
+<h1>7. Special Issue Book<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#7-Special-Issue-Book" class="wiki-anchor">¶</a></h1>
+
+
+	<p style="padding-left:2em;">做特刊书需要满足的条件:</p>
+
+
+	<ul>
+	<li>10 papers published in Special Issue at least (excluding editorial).</li>
+		<li>After Special Issue is closed, no manuscript is under processing, no planned paper</li>
+		<li><span style="color:red;">每个符合要求的截刊特刊都需要邀请GE做特刊书，并将情况记录在Note上</span></li>
+		<li>与GE沟通模板和给GE的操作指南参考<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#5-%E4%B8%8EGE%E6%B2%9F%E9%80%9A%E7%9A%84%E5%90%84%E9%98%B6%E6%AE%B5%E6%A8%A1%E6%9D%BF" class="wiki-page">"5.与GE沟通的各阶段模板"</a>。</li>
+	</ul>
+
+
+	<p style="padding-left:2em;">做特刊书流程:</p>
+
+
+	<ol>
+	<li>做特刊书有两种途径：（1）找GE要特刊书信息，然后报Redmine完成，（2）GE自行通过在线系统完成；目前方案(2)存在问题， <span style="color:red;">请使用方案(1)</span></li>
+		<li>找GE填写特刊书信息，邮件模板: <a href="https://redmine.mdpi.cn/attachments/download/7304010/%5BMathematics%5D%20Special%20Issue%20Book.eml" class="attachment">[Mathematics] Special Issue Book.eml</a>。打开eml文件后按Ctrl+E编辑邮件，并发送给GE</li>
+		<li>收到特刊书信息后，将文件发送给 <ins>Nemo Guan</ins>，同时为这个特刊 <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_books" class="wiki-page">选1个Section和1-3个Subjects</a>（SIE也可自行填写 <a href="https://redmine.mdpi.cn/attachments/download/7309378/Special-Issue-Reprint-Form.docx" class="attachment">Special-Issue-Reprint-Form.docx</a>，然后Redmine报英修和MDPI Books）</li>
+		<li>做一本特刊书需要两三周时间，做好后会收到Proofreading文件，SIE发给GE检查，检查无误后正式发布</li>
+		<li><span style="color:red;">完成后，请务必填写在 <a href="https://docs.google.com/spreadsheets/d/1hGbM9Fu6uUboPtedBzd--TxYqCtaPeDKKQF-SS9HjqE/edit#gid=1404084464" class="external">Google在线表格</a> 的 Twitter SI 推广栏，让期刊在社交媒体上进行宣传。</span> 同时建议SIE也在自己的LinkedIn进行宣传</li>
+	</ol>
+
+
+	<p style="padding-left:2em;">示例：
+	</p><ol>
+	<li>英修 <a class="external" href="https://redmine.mdpi.cn/issues/2166503">https://redmine.mdpi.cn/issues/2166503</a></li>
+		<li>做特刊书 <a class="external" href="https://redmine.mdpi.cn/issues/2168581">https://redmine.mdpi.cn/issues/2168581</a></li>
+	</ol><p></p>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=27"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="8-SIE评价指标和要求"></a>
+<h1>8. SIE评价指标和要求<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#8-SIE%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E5%92%8C%E8%A6%81%E6%B1%82" class="wiki-anchor">¶</a></h1>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=28"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="81-SIE评价指标"></a>
+<h2>8.1 SIE评价指标<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#81-SIE%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87" class="wiki-anchor">¶</a></h2>
+
+
+	<p style="padding-left:2em;">期刊每月统计所有SIE的 SI in hand、总PP数、当月投稿、当月PP投稿，SIE需达到如下要求（暂行）：</p>
+
+
+	<ul>
+	<li><span style="color:red;">PP/SI &gt; 5（2021.6-2021.10）</span>，PP/SI&gt;8（2021.11-）；若未达标，每个特刊每月新增0.8个PP</li>
+		<li><span style="color:red;">SI sub/SI &gt; 1 或 PP sub./SI &gt; 0.5（2021.6-2021.10）</span>，SI sub/SI&gt;1.2 或 PP sub./SI&gt;0.8（2021.11-）；若连续3月未达标，上线新特刊需要8个同意的pp</li>
+	</ul>
+
+
+	<p style="padding-left:2em;">此处查看各SIE员工数据和表现: <a class="external" href="https://docs.google.com/spreadsheets/d/1igneWscqWoPG3TvNIMlTFF8nSzNwfxovaZp0jP1Jb4g/edit#gid=1072377796">https://docs.google.com/spreadsheets/d/1igneWscqWoPG3TvNIMlTFF8nSzNwfxovaZp0jP1Jb4g/edit#gid=1072377796</a></p>
+
+
+<hr>
+
+
+	<div class="contextual" title="Edit this section"><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/edit?section=29"><img alt="Edit" src="./SI_files/edit.png"></a></div><a name="-参考资料"></a>
+<h1>* 参考资料<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN#-%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99" class="wiki-anchor">¶</a></h1>
+
+
+	<p>Mathematics团队Google在线记录表格汇总：</p>
+
+
+	<ul>
+	<li><a href="https://docs.google.com/spreadsheets/d/1hGbM9Fu6uUboPtedBzd--TxYqCtaPeDKKQF-SS9HjqE/edit#gid=1813182974" class="external">EB/TE/文章推广等</a></li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1igneWscqWoPG3TvNIMlTFF8nSzNwfxovaZp0jP1Jb4g/edit#gid=1072377796" class="external">各SIE员工数据和表现</a></li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1TjWGWoyPMgr9LQ4qdOKdRg0fj9j4uUt-C5tsKhAQSbc/edit#gid=1484094950" class="external">SIE Training of Section 4</a></li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1Juh1oH_-PQvxjCzmV-PF9RPMVqsKB881bwsP4FY1iNY/edit#gid=0" class="external">Mathematics邀稿工作</a></li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1dGJVDY4V_DNLAqeuJslxwkEbiNfWmgVafYSC5NA1DHg/edit#gid=726045761" class="external">SAP Ursula-Approval Records</a></li>
+	</ul>
+
+
+	<p>上述未列出的其他规则（如从个人邮箱发送CfP等）执行公司规定：</p>
+
+
+	<ul>
+	<li><a href="http://blog.mdpi.lab/team/training/manual/2/table_of_content" class="external">Special Issue Managing 手册</a></li>
+		<li><a href="http://blog.mdpi.lab/team/committee/guide/17" class="external">Special Issue Guidance by MDPI Committees</a></li>
+		<li><a href="http://blog.mdpi.lab/team/committee/guide/82" class="external">Special Issue process updated on 2021-07-16</a></li>
+		<li><a href="https://redmine.mdpi.cn/projects/special-issue-prints/wiki/Production_Process_for_Special_Issue_Reprints" class="external">Special Issue Book 指南</a></li>
+		<li><a href="http://blog.mdpi.lab/team/committee/guide/121" class="external">Special Issue Summary Prepared by in-House Editors or EBM/SEiC─2021.12.15</a></li>
+	</ul>
+
+
+	<p style="font-weight:bold;font-size:16px;">‣ <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%90%88%E9%9B%86" class="wiki-page">点击此链接进入小技巧合集</a></p>
+
+
+	<p style="font-weight:bold;font-size:16px;">‣ <a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/(SIE_Group_A_B_C)" class="wiki-page">点击此链接进入 SIE Group ABC 和工具分享</a></p>
+
+
+<hr>
+</div>
+
+
+<div class="attachments">
+<p><a href="./SI_files/img0001.png" class="icon icon-attachment">img0001.png</a>  
+  <span class="size">(43.3 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6152887" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-23 16:16</span>
+  </p>
+<p><a href="./SI_files/img0002.png" class="icon icon-attachment">img0002.png</a>  
+  <span class="size">(107 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6153246" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-23 16:29</span>
+  </p>
+<p><a href="./SI_files/img0003.png" class="icon icon-attachment">img0003.png</a>  
+  <span class="size">(33.3 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6154814" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-23 17:26</span>
+  </p>
+<p><a href="./SI_files/img0004.png" class="icon icon-attachment">img0004.png</a>  
+  <span class="size">(209 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6155041" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-23 17:33</span>
+  </p>
+<p><a href="./SI_files/img0005.png" class="icon icon-attachment">img0005.png</a>  
+  <span class="size">(213 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6170812" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-24 18:00</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/6171154/Slide%20for%20IFSA-EUSFLAT%202021-Mathematics.pptx" class="icon icon-attachment">Slide for IFSA-EUSFLAT 2021-Mathematics.pptx</a>  
+  <span class="size">(88.1 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6171154" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-24 18:15</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/6176368/BB%20Guest%20Editor%20Guideline.pdf" class="icon icon-attachment">BB Guest Editor Guideline.pdf</a>  
+  <span class="size">(464 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6176368" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-25 11:07</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/6180980/Mail%20Merge.pdf" class="icon icon-attachment">Mail Merge.pdf</a>  
+  <span class="size">(1.36 MB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6180980" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-25 15:44</span>
+  </p>
+<p><a href="./SI_files/img0006.jpg" class="icon icon-attachment">img0006.jpg</a>  
+  <span class="size">(31.1 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/6182183" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-06-25 16:32</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/7303339/Special%20Issue%20Book.docx" class="icon icon-attachment">Special Issue Book.docx</a>  
+  <span class="size">(93.5 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/7303339" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-10-19 16:43</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/7304010/%5BMathematics%5D%20Special%20Issue%20Book.eml" class="icon icon-attachment">[Mathematics] Special Issue Book.eml</a>  
+  <span class="size">(130 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/7304010" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-10-19 17:07</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/7309378/Special-Issue-Reprint-Form.docx" class="icon icon-attachment">Special-Issue-Reprint-Form.docx</a>  
+  <span class="size">(245 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/7309378" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-10-20 08:56</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/7648436/Chinese%20University%20Ranking.xlsx" class="icon icon-attachment">Chinese University Ranking.xlsx</a>  
+  <span class="size">(17.4 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/7648436" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2021-11-18 16:11</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/9441913/EBM%20approval%20from%20EiC.eml" class="icon icon-attachment">EBM approval from EiC.eml</a>  
+  <span class="size">(47.7 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/9441913" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2022-04-19 12:44</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/9457278/Email%20Template%20-%20Ask%20GE%20to%20send%20CfR.docx" class="icon icon-attachment">Email Template - Ask GE to send CfR.docx</a>  
+  <span class="size">(182 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/9457278" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2022-04-20 11:47</span>
+  </p>
+<p><a href="https://redmine.mdpi.cn/attachments/download/10470766/SI%20Managing%20Template%20(Quicktext).zip" class="icon icon-attachment">SI Managing Template (Quicktext).zip</a>  
+  <span class="size">(12.1 KB)</span>
+    <a href="https://redmine.mdpi.cn/attachments/10470766" class="delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" title="Delete"><img alt="Delete" src="./SI_files/delete.png"></a>
+    <span class="author">Syna Mu, 2022-07-08 15:10</span>
+  </p>
+</div>
+
+
+<div id="wiki_add_attachment">
+<p><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN" id="attach_files_link" onclick="$(&#39;#add_attachment_form&#39;).show(); return false;">New file</a></p>
+<form accept-charset="UTF-8" action="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN/add_attachment" enctype="multipart/form-data" id="add_attachment_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="60KCsMAht7cQbXeBVH5MYofgDliCNElCfIBok3TbipE="></div>
+  <div class="box">
+  <p><span class="attachments_fields">
+</span>
+<span class="add_attachment">
+<input class="file_selector" data-description-placeholder="Optional description" data-max-concurrent-uploads="2" data-max-file-size-message="This file cannot be uploaded because it exceeds the maximum allowed file size (1000 MB)" data-max-file-size="1048576000" data-upload-path="/uploads.js" multiple="multiple" name="attachments[dummy][file]" type="file">
+(Maximum size: 1000 MB)
+</span>
+
+<script type="text/javascript">
+var parent = $(".file_selector").parents("p");
+  $(parent).on("change", ".file_selector", function(){
+    addInputFiles(this);
+  });
+</script>
+</p>
+  </div>
+<input name="commit" type="submit" value="Add">
+<a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN" onclick="$(&#39;#add_attachment_form&#39;).hide(); return false;">Cancel</a>
+</form></div>
+
+<p class="other-formats">Also available in:  <span><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN.pdf" class="pdf" rel="nofollow">PDF</a></span>
+  <span><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN.html" class="html" rel="nofollow">HTML</a></span>
+  <span><a href="https://redmine.mdpi.cn/projects/journal-mathematics/wiki/SI_Manage_CN.txt" class="txt" rel="nofollow">TXT</a></span>
+</p>
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> © 2006-2013 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script src="./SI_files/image_paste.js.download" type="text/javascript"></script> 
+    
+    
+
+
+    <script type="text/javascript">
+        $('.contextual:first').prepend($('span.private'));
+        $('.contextual:first').append($('.icon-reveal'));
+        $('.contextual:first').append($('.icon-hide'));
+    </script>
+
+
+
+    <script type="text/javascript">
+
+      $.ajax({
+         url: '/user_agents/update_agent',
+         data: {
+            path: location.href
+         },
+         dataType: "json",
+         type: "get"
+         });
+    </script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
